@@ -5,6 +5,7 @@ export default function Home() {
         <h1 className="text-3xl font-semibold">Hello World</h1>
         <h2 className="text-2xl font-normal">My name is Danny Xu</h2>
         <h3 className="text-xl font-light">This is my github page</h3>
+        <h4 className="text-lg font-thin">I am a software engineer</h4>
       </main>
       
     </div>
