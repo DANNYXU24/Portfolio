@@ -19,12 +19,12 @@ export default function Home() {
         <h5 className="text-base font-extralight">I am a software engineer</h5>
 
         <button
-          className={`px-4 py-2 text-white rounded ${
+          onClick={toggleColor}
+          className={`px-6 py-3 rounded text-white transition-colors duration-300 ${
             isRed ? 'bg-red-500' : 'bg-blue-500'
           }`}
-          onClick={toggleColor}
         >
-          Click me
+          {isRed ? 'Red' : 'Blue'}
         </button>
       </main>
     </div>
