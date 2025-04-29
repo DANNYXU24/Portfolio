@@ -4,6 +4,7 @@ export default function Home() {
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
         <h1 className="text-3xl font-semibold">Hello World</h1>
         <h2 className="text-2xl font-normal">My name is Danny Xu</h2>
+        <h3 className="text-xl font-light">This is my github page</h3>
       </main>
       
     </div>
