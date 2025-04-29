@@ -6,6 +6,15 @@ export default function Home() {
         <h2 className="text-2xl font-normal">My name is Danny Xu</h2>
         <h3 className="text-xl font-light">This is my github page</h3>
         <h4 className="text-lg font-thin">I am a software engineer</h4>
+        <button
+          className="px-4 py-2 text-white bg-red-500 rounded"
+          onClick={(e) => {
+            e.target.style.backgroundColor =
+              e.target.style.backgroundColor === "red" ? "blue" : "red";
+          }}
+        >
+          Click me
+        </button>
       </main>
       
     </div>
