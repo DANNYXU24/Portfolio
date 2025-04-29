@@ -5,9 +5,10 @@ const repo = 'Portfolio'; // replace with your actual repo name
 const nextConfig = {
   output: 'export',
   basePath: isGitHubPages ? `/${repo}` : '',
+  assetPrefix: isGitHubPages ? `/${repo}/` : '',  // Include this line for assets
   trailingSlash: true,
 };
 
 export default nextConfig;
-// This is a Next.js configuration file that sets up the project for deployment on GitHub Pages.
+// If you want to use the `next build` command, you can add the following line
 
