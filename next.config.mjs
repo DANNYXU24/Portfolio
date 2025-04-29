@@ -1,10 +1,10 @@
 const isGitHubPages = process.env.NODE_ENV === 'production';
-const repo = '<portfolio>'; // replace with your actual repo name
+const repo = 'Portfolio'; // replace with your actual repo name
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  basePath: isGitHubPages ? `/${portfolio}` : '',
+  basePath: isGitHubPages ? `/${repo}` : '',
   trailingSlash: true,
 };
 
