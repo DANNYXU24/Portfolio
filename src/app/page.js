@@ -12,20 +12,41 @@ export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <h1 className="text-3xl font-semibold">Hello World</h1>
-        <h2 className="text-2xl font-normal">My name is Danny Xu</h2>
-        <h3 className="text-xl font-light">This is my github page</h3>
-        <h4 className="text-lg font-thin">I am a software engineer</h4>
-        <h5 className="text-base font-extralight">I am a software engineer</h5>
-
-        <button
-          onClick={toggleColor}
-          className={`px-6 py-3 rounded text-white transition-colors duration-300 ${
-            isRed ? 'bg-red-500' : 'bg-blue-500'
-          }`}
-        >
-          {isRed ? 'Red' : 'Blue'}
-        </button>
+        <div className="portfolio">
+          <h2 className="text-2xl font-semibold mb-4">Portfolio</h2>
+          <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <li className="p-4 border rounded shadow hover:shadow-lg transition-shadow">
+              <h3 className="text-lg font-medium">Project 1</h3>
+              <p className="text-sm text-gray-600">Description of Project 1</p>
+              <a
+                href="#"
+                className="text-blue-500 hover:underline mt-2 inline-block"
+              >
+                View Project
+              </a>
+            </li>
+            <li className="p-4 border rounded shadow hover:shadow-lg transition-shadow">
+              <h3 className="text-lg font-medium">Project 2</h3>
+              <p className="text-sm text-gray-600">Description of Project 2</p>
+              <a
+                href="#"
+                className="text-blue-500 hover:underline mt-2 inline-block"
+              >
+                View Project
+              </a>
+            </li>
+            <li className="p-4 border rounded shadow hover:shadow-lg transition-shadow">
+              <h3 className="text-lg font-medium">Project 3</h3>
+              <p className="text-sm text-gray-600">Description of Project 3</p>
+              <a
+                href="#"
+                className="text-blue-500 hover:underline mt-2 inline-block"
+              >
+                View Project
+              </a>
+            </li>
+          </ul>
+        </div>
       </main>
     </div>
   );
