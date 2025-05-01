@@ -20,7 +20,7 @@ export default function Home() {
               <h3 className="text-lg font-medium">Project 1</h3>
               <p className="text-sm text-gray-600">Description of Project 1</p>
               <Link
-                href="/projects/project1"
+                href="/projects/project1/"
                 className="text-blue-500 hover:underline mt-2 inline-block"
               >
                 View Project
@@ -30,7 +30,7 @@ export default function Home() {
               <h3 className="text-lg font-medium">Project 2</h3>
               <p className="text-sm text-gray-600">Description of Project 2</p>
               <Link
-                href="/projects/project2"
+                href="/projects/project2/"
                 className="text-blue-500 hover:underline mt-2 inline-block"
               >
                 View Project
@@ -40,7 +40,7 @@ export default function Home() {
               <h3 className="text-lg font-medium">Project 3</h3>
               <p className="text-sm text-gray-600">Description of Project 3</p>
               <Link
-                href="/projects/project3"
+                href="/projects/project3/"
                 className="text-blue-500 hover:underline mt-2 inline-block"
               >
                 View Project
