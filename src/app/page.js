@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
 
 export default function Home() {
   const [isRed, setIsRed] = useState(true);
@@ -18,32 +19,32 @@ export default function Home() {
             <li className="p-4 border rounded shadow hover:shadow-lg transition-shadow">
               <h3 className="text-lg font-medium">Project 1</h3>
               <p className="text-sm text-gray-600">Description of Project 1</p>
-              <a
-                href="#"
+              <Link
+                href="/projects/project1"
                 className="text-blue-500 hover:underline mt-2 inline-block"
               >
                 View Project
-              </a>
+              </Link>
             </li>
             <li className="p-4 border rounded shadow hover:shadow-lg transition-shadow">
               <h3 className="text-lg font-medium">Project 2</h3>
               <p className="text-sm text-gray-600">Description of Project 2</p>
-              <a
-                href="#"
+              <Link
+                href="/projects/project2"
                 className="text-blue-500 hover:underline mt-2 inline-block"
               >
                 View Project
-              </a>
+              </Link>
             </li>
             <li className="p-4 border rounded shadow hover:shadow-lg transition-shadow">
               <h3 className="text-lg font-medium">Project 3</h3>
               <p className="text-sm text-gray-600">Description of Project 3</p>
-              <a
-                href="#"
+              <Link
+                href="/projects/project3"
                 className="text-blue-500 hover:underline mt-2 inline-block"
               >
                 View Project
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
