@@ -1,11 +1,41 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
 
 export default function Project3() {
   // State to control the visibility of the projects dropdown menu
   const [showProjectsDropdown, setShowProjectsDropdown] = useState(false);
+  // Ref for the dropdown container to handle mouse events
+  const dropdownRef = useRef(null);
+  // Timeout ref to manage the delay before closing
+  const timeoutRef = useRef(null);
+
+  // Function to handle mouse enter on dropdown
+  const handleMouseEnter = () => {
+    // Clear any existing timeout to prevent the dropdown from closing
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+    }
+    setShowProjectsDropdown(true);
+  };
+
+  // Function to handle mouse leave with a delay
+  const handleMouseLeave = () => {
+    // Set a timeout to close the dropdown after a delay to allow for some movement gap
+    timeoutRef.current = setTimeout(() => {
+      setShowProjectsDropdown(false);
+    }, 100); // 100ms delay before closing
+  };
+
+  // Cleanup effect for the timeout
+  useEffect(() => {
+    return () => {
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current);
+      }
+    };
+  }, []);
 
   return (
     // Main container with dark blue background and light text
@@ -19,21 +49,22 @@ export default function Project3() {
         
         {/* Navigation buttons */}
         <div className="flex gap-4">
-          {/* Projects dropdown with hover functionality */}
-          <div className="relative">
+          {/* Projects dropdown with improved hover functionality */}
+          <div 
+            className="relative" 
+            ref={dropdownRef}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+          >
             <button 
               className="text-xl font-semibold border-4 border-[#FFFDD0] p-3 hover:bg-[#28FFE5] hover:text-[#0D1B2A] transition-all duration-300"
-              onMouseEnter={() => setShowProjectsDropdown(true)}
-              onMouseLeave={() => setShowProjectsDropdown(false)}
             >
               Projects
             </button>
-            {/* Dropdown menu that appears on hover */}
+            {/* Dropdown menu with improved hover behavior */}
             {showProjectsDropdown && (
               <div 
                 className="absolute top-full right-0 mt-1 bg-[#0D1B2A] border-4 border-[#FFFDD0] w-40 z-10"
-                onMouseEnter={() => setShowProjectsDropdown(true)}
-                onMouseLeave={() => setShowProjectsDropdown(false)}
               >
                 {/* Project links in dropdown - Project 3 is current page */}
                 <Link href="/projects/project1">
