@@ -74,7 +74,7 @@ export default function Home() {
             <Link href="/projects/project1/" className="block w-full h-full">
               <li className="p-4 border-4 border-[#FFFDD0] shadow hover:shadow-lg transition-shadow hover:bg-[#28FFE5] hover:text-[#0D1B2A] transition-all duration-300 cursor-pointer min-h-[200px] flex flex-col justify-start">
                 <h3 className="text-3xl font-semibold mb-2">Project 1</h3>
-                <p className="text-2xl text-gray-600">Description of Project 1</p>
+                <p className="text-2xl text-gray-600">Put a description here</p>
               </li>
             </Link>
             {/* Project 2 card */}
@@ -82,7 +82,7 @@ export default function Home() {
             <Link href="/projects/project2/" className="block w-full h-full">
               <li className="p-4 border-4 border-[#FFFDD0] shadow hover:shadow-lg transition-shadow hover:bg-[#28FFE5] hover:text-[#0D1B2A] transition-all duration-300 cursor-pointer min-h-[200px] flex flex-col justify-start">
                 <h3 className="text-3xl font-semibold mb-2">Project 2</h3>
-                <p className="text-2xl text-gray-600">Description of Project 2</p>
+                <p className="text-2xl text-gray-600">Put a description here</p>
               </li>
             </Link>
             {/* Project 3 card */}
@@ -90,7 +90,7 @@ export default function Home() {
             <Link href="/projects/project3/" className="block w-full h-full">
               <li className="p-4 border-4 border-[#FFFDD0] shadow hover:shadow-lg transition-shadow hover:bg-[#28FFE5] hover:text-[#0D1B2A] transition-all duration-300 cursor-pointer min-h-[200px] flex flex-col justify-start">
                 <h3 className="text-3xl font-semibold mb-2">Project 3</h3>
-                <p className="text-2xl text-gray-600">Description of Project 3</p>
+                <p className="text-2xl text-gray-600">Put a description here</p>
               </li>
             </Link>
           </ul>
