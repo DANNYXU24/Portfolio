@@ -66,7 +66,7 @@ export default function Project3() {
       {/* Main content section */}
       <div className="container mx-auto px-4 py-12">
         {/* Project title */}
-        <h1 className="text-3xl font-bold mb-6">Project 3</h1>
+        <h1 className="text-3xl font-bold mb-6">Project 3 Under Construction</h1>
         
         {/* Project details card */}
         <div className="bg-[#0D1B2A] border-4 border-[#FFFDD0] shadow-md p-6 mb-6">
