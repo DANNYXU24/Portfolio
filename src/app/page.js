@@ -13,7 +13,7 @@ export default function Home() {
       {/* Header section with logo and navigation */}
       <div className="flex justify-between items-center w-full">
         {/* Logo/brand mark with hover effect */}
-        <h2 className="text-6xl font-semibold border-4 border-[#FFFDD0] p-4 hover:bg-[#28FFE5] hover:text-[#0D1B2A] transition-all duration-300">DX</h2>
+        <h2 className="text-xl font-semibold border-4 border-[#FFFDD0] p-3 hover:bg-[#28FFE5] hover:text-[#0D1B2A] transition-all duration-300">DX</h2>
         
         {/* Navigation buttons */}
         <div className="flex gap-4">
@@ -70,6 +70,7 @@ export default function Home() {
           {/* Project grid with responsive columns (1 on mobile, 2 on tablet, 3 on desktop) */}
           <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
             {/* Project 1 card */}
+            {/* REMINDER: Use &apos; instead of ' for apostrophes in JSX text */}
             <Link href="/projects/project1/" className="block w-full h-full">
               <li className="p-4 border-4 border-[#FFFDD0] shadow hover:shadow-lg transition-shadow hover:bg-[#28FFE5] hover:text-[#0D1B2A] transition-all duration-300 cursor-pointer min-h-[200px] flex flex-col justify-start">
                 <h3 className="text-3xl font-semibold mb-2">Project 1</h3>
@@ -77,6 +78,7 @@ export default function Home() {
               </li>
             </Link>
             {/* Project 2 card */}
+            {/* REMINDER: Use &apos; instead of ' for apostrophes in JSX text */}
             <Link href="/projects/project2/" className="block w-full h-full">
               <li className="p-4 border-4 border-[#FFFDD0] shadow hover:shadow-lg transition-shadow hover:bg-[#28FFE5] hover:text-[#0D1B2A] transition-all duration-300 cursor-pointer min-h-[200px] flex flex-col justify-start">
                 <h3 className="text-3xl font-semibold mb-2">Project 2</h3>
@@ -84,6 +86,7 @@ export default function Home() {
               </li>
             </Link>
             {/* Project 3 card */}
+            {/* REMINDER: Use &apos; instead of ' for apostrophes in JSX text */}
             <Link href="/projects/project3/" className="block w-full h-full">
               <li className="p-4 border-4 border-[#FFFDD0] shadow hover:shadow-lg transition-shadow hover:bg-[#28FFE5] hover:text-[#0D1B2A] transition-all duration-300 cursor-pointer min-h-[200px] flex flex-col justify-start">
                 <h3 className="text-3xl font-semibold mb-2">Project 3</h3>

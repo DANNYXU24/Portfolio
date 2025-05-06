@@ -14,7 +14,7 @@ export default function Project3() {
       <div className="flex justify-between items-center w-full">
         {/* Logo/brand mark with link to homepage */}
         <Link href="/">
-          <h2 className="text-6xl font-semibold border-4 border-[#FFFDD0] p-4 hover:bg-[#28FFE5] hover:text-[#0D1B2A] transition-all duration-300 cursor-pointer">DX</h2>
+          <h2 className="text-xl font-semibold border-4 border-[#FFFDD0] p-3 hover:bg-[#28FFE5] hover:text-[#0D1B2A] transition-all duration-300 cursor-pointer">DX</h2>
         </Link>
         
         {/* Navigation buttons */}
@@ -73,6 +73,7 @@ export default function Project3() {
           {/* Project details heading */}
           <h2 className="text-2xl font-semibold mb-4">Project Details</h2>
           {/* Project description */}
+          {/* REMINDER: Use &apos; instead of ' for apostrophes in JSX text */}
           <p className="mb-4 text-gray-100">
             Detailed description of Project 3. This is where you can provide information
             about the project, including its purpose, technologies used, challenges faced,
@@ -82,6 +83,7 @@ export default function Project3() {
           {/* Technologies used section */}
           <div className="mb-4">
             <h3 className="text-xl font-medium mb-2">Technologies Used</h3>
+            {/* REMINDER: Use &apos; instead of ' for apostrophes in JSX text */}
             <ul className="list-disc pl-5 text-gray-100">
               <li>React</li>
               <li>Next.js</li>
@@ -93,6 +95,7 @@ export default function Project3() {
           {/* Key features section */}
           <div className="mb-4">
             <h3 className="text-xl font-medium mb-2">Key Features</h3>
+            {/* REMINDER: Use &apos; instead of ' for apostrophes in JSX text */}
             <ul className="list-disc pl-5 text-gray-100">
               <li>Feature 1</li>
               <li>Feature 2</li>

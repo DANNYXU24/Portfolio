@@ -14,7 +14,7 @@ export default function Resume() {
       <div className="flex justify-between items-center w-full">
         {/* Logo/brand mark with link to homepage */}
         <Link href="/">
-          <h2 className="text-6xl font-semibold border-4 border-[#FFFDD0] p-4 hover:bg-[#28FFE5] hover:text-[#0D1B2A] transition-all duration-300 cursor-pointer">DX</h2>
+          <h2 className="text-xl font-semibold border-4 border-[#FFFDD0] p-3 hover:bg-[#28FFE5] hover:text-[#0D1B2A] transition-all duration-300 cursor-pointer">DX</h2>
         </Link>
         
         {/* Navigation buttons */}
@@ -74,6 +74,7 @@ export default function Resume() {
           <h2 className="text-2xl font-semibold mb-4">Experience</h2>
           
           {/* Senior Developer experience entry */}
+          {/* REMINDER: Use &apos; instead of ' for apostrophes in JSX text */}
           <div className="mb-6">
             <h3 className="text-xl font-medium">Senior Developer</h3>
             <p className="text-gray-300">Company Name | 2022 - Present</p>
@@ -85,6 +86,7 @@ export default function Resume() {
           </div>
           
           {/* Web Developer experience entry */}
+          {/* REMINDER: Use &apos; instead of ' for apostrophes in JSX text */}
           <div className="mb-6">
             <h3 className="text-xl font-medium">Web Developer</h3>
             <p className="text-gray-300">Previous Company | 2018 - 2022</p>

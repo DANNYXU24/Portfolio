@@ -14,7 +14,7 @@ export default function About() {
       <div className="flex justify-between items-center w-full">
         {/* Logo/brand mark with link to homepage */}
         <Link href="/">
-          <h2 className="text-6xl font-semibold border-4 border-[#FFFDD0] p-4 hover:bg-[#28FFE5] hover:text-[#0D1B2A] transition-all duration-300 cursor-pointer">DX</h2>
+          <h2 className="text-xl font-semibold border-4 border-[#FFFDD0] p-3 hover:bg-[#28FFE5] hover:text-[#0D1B2A] transition-all duration-300 cursor-pointer">DX</h2>
         </Link>
         
         {/* Navigation buttons */}
@@ -84,19 +84,21 @@ export default function About() {
               {/* Name heading */}
               <h2 className="text-2xl font-semibold mb-4">Danny Xu</h2>
               {/* Bio paragraphs */}
+              {/* REMINDER: Use &apos; instead of ' for apostrophes in JSX text */}
               <p className="mb-4 text-gray-100">
-                I'm a passionate web developer specializing in creating dynamic and responsive web applications. 
-                With expertise in modern front-end technologies like React and Next.js, I build intuitive user 
-                interfaces that deliver exceptional user experiences.
+                I&apos;m a UI/UX designer from San Francisco.
               </p>
+              {/* REMINDER: Use &apos; instead of ' for apostrophes in JSX text */}
               <p className="mb-4 text-gray-100">
-                My journey in software development started at [University/College Name], where I earned my 
-                degree in Computer Science. Since then, I've worked on a variety of projects, ranging from 
-                e-commerce platforms to content management systems.
+                My journey in UI/UX design started at [UCSD], where I earned my 
+                degree in Cognitive Science w/specialization in Design and Interaction.
+                I have a design ethos that embodies the essense of an Oasis, 
+                Optimal functionality, Addictive engagement, Simple interaction, Intuitive usability, Satisfying outcomes.
               </p>
+              {/* REMINDER: Use &apos; instead of ' for apostrophes in JSX text */}
               <p className="mb-4 text-gray-100">
-                When I'm not coding, I enjoy hiking, photography, and exploring new technologies. I'm always 
-                looking for new challenges and opportunities to grow as a developer.
+                During my free time, I enjoy watching sports, my favorite teams being the Warriors,SF Giants, 49ers, and Manchester United.
+                I also love to learn the language, French, as during my time at UCSD, I was able to also double major in French.
               </p>
               
               {/* Contact information section */}
@@ -105,13 +107,13 @@ export default function About() {
                 {/* Social/contact links with hover effects */}
                 <div className="flex gap-4">
                   <a href="mailto:email@example.com" className="text-[#28FFE5] hover:text-[#FFFDD0] transition-all duration-300">
-                    email@example.com
+                    dax002@ucsd.edu
                   </a>
                   <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" className="text-[#28FFE5] hover:text-[#FFFDD0] transition-all duration-300">
                     LinkedIn
                   </a>
-                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer" className="text-[#28FFE5] hover:text-[#FFFDD0] transition-all duration-300">
-                    GitHub
+                  <a href="tel: +14156063787" target="_blank" rel="noopener noreferrer" className="text-[#28FFE5] hover:text-[#FFFDD0] transition-all duration-300">
+                    Call/Text Me
                   </a>
                 </div>
               </div>
