@@ -107,7 +107,7 @@ export default function Resume() {
           
           <div className="w-full h-[800px] overflow-hidden">
             <iframe 
-              src="https://docs.google.com/document/d/e/2PACX-1vSQEtI-Ykd58lopjL10FEsb4hj0dbIVEBHC0h41GSVSalnFRVYFyMNVc94exiUcXUKPm1l074-Rexos/pub?embedded=true" 
+              src="https://docs.google.com/document/d/e/2PACX-1vT4PqPqpbyxamUCy2yHM1_nwPhQxIg93yFa_QubRAoE1Up-WzTt8zU0OePSJ3pYvxSmcrX9OOTsjcXq/pub?embedded=true" 
               className="w-full h-full"
               frameBorder="0"
               title="Resume"
