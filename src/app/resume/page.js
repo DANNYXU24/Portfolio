@@ -102,7 +102,7 @@ export default function Resume() {
         {/* Google Doc Embed */}
         <div className="bg-[#0D1B2A] border-4 border-[#FFFDD0] shadow-md p-6 mb-6">
           <div className="mb-4">
-            <p className="text-gray-300">My resume is available below. You can also view it directly in Google Docs <a href="https://docs.google.com/document/d/e/2PACX-1vSQEtI-Ykd58lopjL10FEsb4hj0dbIVEBHC0h41GSVSalnFRVYFyMNVc94exiUcXUKPm1l074-Rexos/pub" target="_blank" rel="noopener noreferrer" className="text-[#28FFE5] hover:underline">here</a>.</p>
+            <p className="text-gray-300">My resume is available below. You can also view it directly in Google Docs <a href="https://docs.google.com/document/d/1T3c--PUtXwK6LSWymN4FDq19s1YI0XYXP0x7KEhZsgk/edit?usp=sharing" target="_blank" rel="noopener noreferrer" className="text-[#28FFE5] hover:underline">here</a>.</p>
           </div>
           
           <div className="w-full h-[800px] overflow-hidden">
