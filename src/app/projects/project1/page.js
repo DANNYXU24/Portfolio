@@ -25,7 +25,7 @@ export default function Project1() {
     // Set a timeout to close the dropdown after a delay to allow for some movement gap
     timeoutRef.current = setTimeout(() => {
       setShowProjectsDropdown(false);
-    }, 100); // 300ms delay before closing
+    }, 100); // 100ms delay before closing
   };
 
   // Cleanup effect for the timeout

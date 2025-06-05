@@ -100,28 +100,28 @@ export default function Home() {
         <div className="portfolio w-full">
           {/* Project grid with responsive columns (1 on mobile, 2 on tablet, 3 on desktop) */}
           <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
-            {/* Project 1 card */}
-            {/* REMINDER: Use &apos; instead of ' for apostrophes in JSX text */}
-            <Link href="/projects/project1/" className="block w-full h-full">
-              <li className="p-4 border-4 border-[#FFFDD0] shadow hover:shadow-lg transition-shadow hover:bg-[#28FFE5] hover:text-[#0D1B2A] transition-all duration-300 cursor-pointer min-h-[200px] flex flex-col justify-start">
-                <h3 className="text-3xl font-semibold mb-2">Project 1</h3>
-                <p className="text-2xl text-gray-600">Put a description here</p>
+            {/* Project 1 card - now a square with placeholder image */}
+            <Link href="/projects/project1/" className="block w-full">
+              <li className="aspect-square p-4 border-4 border-[#FFFDD0] shadow hover:shadow-lg hover:bg-[#28FFE5] hover:text-[#0D1B2A] transition-all duration-300 cursor-pointer flex flex-col justify-center items-center">
+                <div className="w-full h-full bg-gray-400 flex items-center justify-center text-gray-700 font-bold">
+                  INSERT IMAGE HERE
+                </div>
               </li>
             </Link>
-            {/* Project 2 card */}
-            {/* REMINDER: Use &apos; instead of ' for apostrophes in JSX text */}
-            <Link href="/projects/project2/" className="block w-full h-full">
-              <li className="p-4 border-4 border-[#FFFDD0] shadow hover:shadow-lg transition-shadow hover:bg-[#28FFE5] hover:text-[#0D1B2A] transition-all duration-300 cursor-pointer min-h-[200px] flex flex-col justify-start">
-                <h3 className="text-3xl font-semibold mb-2">Project 2</h3>
-                <p className="text-2xl text-gray-600">Put a description here</p>
+            {/* Project 2 card - now a square with placeholder image */}
+            <Link href="/projects/project2/" className="block w-full">
+              <li className="aspect-square p-4 border-4 border-[#FFFDD0] shadow hover:shadow-lg hover:bg-[#28FFE5] hover:text-[#0D1B2A] transition-all duration-300 cursor-pointer flex flex-col justify-center items-center">
+                <div className="w-full h-full bg-gray-400 flex items-center justify-center text-gray-700 font-bold">
+                  INSERT IMAGE HERE
+                </div>
               </li>
             </Link>
-            {/* Project 3 card */}
-            {/* REMINDER: Use &apos; instead of ' for apostrophes in JSX text */}
-            <Link href="/projects/project3/" className="block w-full h-full">
-              <li className="p-4 border-4 border-[#FFFDD0] shadow hover:shadow-lg transition-shadow hover:bg-[#28FFE5] hover:text-[#0D1B2A] transition-all duration-300 cursor-pointer min-h-[200px] flex flex-col justify-start">
-                <h3 className="text-3xl font-semibold mb-2">Project 3</h3>
-                <p className="text-2xl text-gray-600">Put a description here</p>
+            {/* Project 3 card - now a square with placeholder image */}
+            <Link href="/projects/project3/" className="block w-full">
+              <li className="aspect-square p-4 border-4 border-[#FFFDD0] shadow hover:shadow-lg hover:bg-[#28FFE5] hover:text-[#0D1B2A] transition-all duration-300 cursor-pointer flex flex-col justify-center items-center">
+                <div className="w-full h-full bg-gray-400 flex items-center justify-center text-gray-700 font-bold">
+                  INSERT IMAGE HERE
+                </div>
               </li>
             </Link>
           </ul>
