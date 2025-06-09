@@ -44,7 +44,7 @@ export default function Resume() {
       <div className="flex justify-between items-center w-full">
         {/* Logo/brand mark with link to homepage */}
         <Link href="/">
-          <h2 className="text-xl font-semibold border-4 border-[#FFFDD0] p-3 hover:bg-[#28FFE5] hover:text-[#0D1B2A] transition-all duration-300 cursor-pointer">DX</h2>
+          <h2 className="text-xl font-semibold border-3 border-[#FFFDD0] p-3 hover:bg-[#28FFE5] hover:text-[#0D1B2A] transition-all duration-300 cursor-pointer">DX</h2>
         </Link>
         
         {/* Navigation buttons */}
@@ -57,14 +57,14 @@ export default function Resume() {
             onMouseLeave={handleMouseLeave}
           >
             <button 
-              className="text-xl font-semibold border-4 border-[#FFFDD0] p-3 hover:bg-[#28FFE5] hover:text-[#0D1B2A] transition-all duration-300"
+              className="text-xl font-semibold border-3 border-[#FFFDD0] p-3 hover:bg-[#28FFE5] hover:text-[#0D1B2A] transition-all duration-300"
             >
               Projects
             </button>
             {/* Dropdown menu with improved hover behavior */}
             {showProjectsDropdown && (
               <div 
-                className="absolute top-full right-0 mt-1 bg-[#0D1B2A] border-4 border-[#FFFDD0] w-40 z-10"
+                className="absolute top-full right-0 mt-1 bg-[#0D1B2A] border-3 border-[#FFFDD0] w-40 z-10"
               >
                 {/* Project links in dropdown */}
                 <Link href="/projects/project1">
@@ -81,13 +81,13 @@ export default function Resume() {
           </div>
           {/* Resume navigation button - currently active */}
           <Link href="/resume">
-            <button className="text-xl font-semibold border-4 border-[#FFFDD0] p-3 hover:bg-[#28FFE5] hover:text-[#0D1B2A] transition-all duration-300">
+            <button className="text-xl font-semibold border-3 border-[#FFFDD0] p-3 hover:bg-[#28FFE5] hover:text-[#0D1B2A] transition-all duration-300">
               Resume
             </button>
           </Link>
           {/* About navigation button */}
           <Link href="/about">
-            <button className="text-xl font-semibold border-4 border-[#FFFDD0] p-3 hover:bg-[#28FFE5] hover:text-[#0D1B2A] transition-all duration-300">
+            <button className="text-xl font-semibold border-3 border-[#FFFDD0] p-3 hover:bg-[#28FFE5] hover:text-[#0D1B2A] transition-all duration-300">
               About
             </button>
           </Link>
@@ -100,7 +100,7 @@ export default function Resume() {
         <h1 className="text-3xl font-bold mb-6">Resume</h1>
         
         {/* Google Doc Embed */}
-        <div className="bg-[#0D1B2A] border-4 border-[#FFFDD0] shadow-md p-6 mb-6">
+        <div className="bg-[#0D1B2A] border-3 border-[#FFFDD0] shadow-md p-6 mb-6">
           <div className="mb-4">
             <p className="text-gray-300">My resume is available below. You can also view it directly in Google Docs <a href="https://docs.google.com/document/d/1T3c--PUtXwK6LSWymN4FDq19s1YI0XYXP0x7KEhZsgk/edit?usp=sharing" target="_blank" rel="noopener noreferrer" className="text-[#28FFE5] hover:underline">here</a>.</p>
           </div>
