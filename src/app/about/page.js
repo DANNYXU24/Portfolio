@@ -94,13 +94,13 @@ export default function About() {
         </div>
       </div>
       
-      {/* Main content section for About page */}
-      <div className="container mx-auto px-4 py-12">
-        {/* Page title */}
-        <h1 className="text-3xl font-bold mb-6">About Me</h1>
+      {/* Main content section - make sure this maintains the same spacing as homepage */}
+      <main className="flex flex-col gap-4 items-start w-full">
+        {/* Page title - similar position to "Danny Xu" on homepage */}
+        <h1 className="text-4xl font-semibold mb-6">About Me</h1>
         
         {/* About content with border */}
-        <div className="bg-[#0D1B2A] border-3 border-[#FFFDD0] shadow-md p-6 mb-6">
+        <div className="bg-[#0D1B2A] border-3 border-[#FFFDD0] shadow-md p-6 mb-6 w-full">
           <div className="flex flex-col md:flex-row gap-8">
             {/* Profile image placeholder */}
             <div className="w-full md:w-1/3 bg-gray-400 aspect-square flex items-center justify-center text-gray-700 font-bold">
@@ -140,7 +140,7 @@ export default function About() {
             </div>
           </div>
         </div>
-      </div>
+      </main>
     </div>
   );
 }

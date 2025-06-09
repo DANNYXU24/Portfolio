@@ -94,13 +94,13 @@ export default function Resume() {
         </div>
       </div>
       
-      {/* Main content section */}
-      <div className="container mx-auto px-4 py-12">
-        {/* Page title */}
-        <h1 className="text-3xl font-bold mb-6">Resume</h1>
+      {/* Main content section - make sure this maintains the same spacing as homepage */}
+      <main className="flex flex-col gap-4 items-start w-full">
+        {/* Page title - similar position to "Danny Xu" on homepage */}
+        <h1 className="text-4xl font-semibold mb-6">Resume</h1>
         
-        {/* Google Doc Embed with custom dashed border */}
-        <div className="bg-[#0D1B2A] custom-dashed-border shadow-md p-6 mb-6">
+        {/* Resume content with dashed border */}
+        <div className="bg-[#0D1B2A] custom-dashed-border shadow-md p-6 mb-6 w-full">
           <div className="mb-4">
             <p className="text-gray-300">My resume is available below. You can also view it directly in Google Docs <a href="https://docs.google.com/document/d/1T3c--PUtXwK6LSWymN4FDq19s1YI0XYXP0x7KEhZsgk/edit?usp=sharing" target="_blank" rel="noopener noreferrer" className="text-[#28FFE5] hover:underline">here</a>.</p>
           </div>
@@ -114,7 +114,7 @@ export default function Resume() {
             ></iframe>
           </div>
         </div>
-      </div>
+      </main>
     </div>
   );
 }
