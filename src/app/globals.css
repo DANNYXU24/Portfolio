@@ -24,3 +24,49 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.custom-dashed-border {
+  border: none !important; /* Remove the regular border */
+  padding: 20px !important; /* Increase padding to create more space between border and content */
+  position: relative; /* Ensure positioning context */
+  --dash-length: 25px; /* Longer dashes */
+  --gap-length: 25px; /* Much bigger gaps - increased from 25px to 45px */
+  --border-width: 3px; /* Border thickness */
+
+  /* Add a small bit of padding to create space for the border */
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+
+  /* Create the dashed border using pseudo-elements for better control */
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+
+    /* Try a different approach to create the dashed border */
+    background-image:
+      /* Top */
+      linear-gradient(to right, #FFFDD0 var(--dash-length), transparent var(--dash-length), transparent calc(var(--dash-length) + var(--gap-length))),
+      /* Right */
+      linear-gradient(to bottom, #FFFDD0 var(--dash-length), transparent var(--dash-length), transparent calc(var(--dash-length) + var(--gap-length))),
+      /* Bottom */
+      linear-gradient(to left, #FFFDD0 var(--dash-length), transparent var(--dash-length), transparent calc(var(--dash-length) + var(--gap-length))),
+      /* Left */
+      linear-gradient(to top, #FFFDD0 var(--dash-length), transparent var(--dash-length), transparent calc(var(--dash-length) + var(--gap-length)));
+
+    background-size:
+      calc(var(--dash-length) + var(--gap-length)) var(--border-width),
+      var(--border-width) calc(var(--dash-length) + var(--gap-length)),
+      calc(var(--dash-length) + var(--gap-length)) var(--border-width),
+      var(--border-width) calc(var(--dash-length) + var(--gap-length));
+
+    background-position: top, right, bottom, left;
+    background-repeat: repeat-x, repeat-y, repeat-x, repeat-y;
+  }
+}
