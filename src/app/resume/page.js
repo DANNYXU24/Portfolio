@@ -99,8 +99,8 @@ export default function Resume() {
         {/* Page title */}
         <h1 className="text-3xl font-bold mb-6">Resume</h1>
         
-        {/* Google Doc Embed */}
-        <div className="bg-[#0D1B2A] border-3 border-[#FFFDD0] shadow-md p-6 mb-6">
+        {/* Google Doc Embed with dashed border */}
+        <div className="bg-[#0D1B2A] border-3 border-dashed border-[#FFFDD0] shadow-md p-6 mb-6">
           <div className="mb-4">
             <p className="text-gray-300">My resume is available below. You can also view it directly in Google Docs <a href="https://docs.google.com/document/d/1T3c--PUtXwK6LSWymN4FDq19s1YI0XYXP0x7KEhZsgk/edit?usp=sharing" target="_blank" rel="noopener noreferrer" className="text-[#28FFE5] hover:underline">here</a>.</p>
           </div>
