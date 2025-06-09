@@ -43,7 +43,7 @@ export default function Home() {
       {/* Header section with logo and navigation */}
       <div className="flex justify-between items-center w-full">
         {/* Logo/brand mark with hover effect */}
-        <h2 className="text-xl font-semibold border-4 border-[#FFFDD0] p-3 hover:bg-[#28FFE5] hover:text-[#0D1B2A] transition-all duration-300">DX</h2>
+        <h2 className="text-xl font-semibold border-2 border-[#FFFDD0] p-3 hover:bg-[#28FFE5] hover:text-[#0D1B2A] transition-all duration-300">DX</h2>
         
         {/* Navigation buttons */}
         <div className="flex gap-4">
@@ -55,14 +55,14 @@ export default function Home() {
             onMouseLeave={handleMouseLeave}
           >
             <button 
-              className="text-xl font-semibold border-4 border-[#FFFDD0] p-3 hover:bg-[#28FFE5] hover:text-[#0D1B2A] transition-all duration-300"
+              className="text-xl font-semibold border-2 border-[#FFFDD0] p-3 hover:bg-[#28FFE5] hover:text-[#0D1B2A] transition-all duration-300"
             >
               Projects
             </button>
             {/* Dropdown menu with improved hover behavior */}
             {showProjectsDropdown && (
               <div 
-                className="absolute top-full right-0 mt-1 bg-[#0D1B2A] border-4 border-[#FFFDD0] w-40 z-10"
+                className="absolute top-full right-0 mt-1 bg-[#0D1B2A] border-2 border-[#FFFDD0] w-40 z-10"
               >
                 {/* Project links in dropdown */}
                 <Link href="/projects/project1">
@@ -79,13 +79,13 @@ export default function Home() {
           </div>
           {/* Resume navigation button */}
           <Link href="/resume">
-            <button className="text-xl font-semibold border-4 border-[#FFFDD0] p-3 hover:bg-[#28FFE5] hover:text-[#0D1B2A] transition-all duration-300">
+            <button className="text-xl font-semibold border-2 border-[#FFFDD0] p-3 hover:bg-[#28FFE5] hover:text-[#0D1B2A] transition-all duration-300">
               Resume
             </button>
           </Link>
           {/* About navigation button */}
           <Link href="/about">
-            <button className="text-xl font-semibold border-4 border-[#FFFDD0] p-3 hover:bg-[#28FFE5] hover:text-[#0D1B2A] transition-all duration-300">
+            <button className="text-xl font-semibold border-2 border-[#FFFDD0] p-3 hover:bg-[#28FFE5] hover:text-[#0D1B2A] transition-all duration-300">
               About
             </button>
           </Link>
@@ -102,7 +102,7 @@ export default function Home() {
           <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
             {/* Project 1 card - now a square with placeholder image */}
             <Link href="/projects/project1/" className="block w-full">
-              <li className="aspect-square p-4 border-4 border-[#FFFDD0] shadow hover:shadow-lg hover:bg-[#28FFE5] hover:text-[#0D1B2A] transition-all duration-300 cursor-pointer flex flex-col justify-center items-center">
+              <li className="aspect-square p-4 border-2 border-[#FFFDD0] shadow hover:shadow-lg hover:bg-[#28FFE5] hover:text-[#0D1B2A] transition-all duration-300 cursor-pointer flex flex-col justify-center items-center">
                 <div className="w-full h-full bg-gray-400 flex items-center justify-center text-gray-700 font-bold">
                   INSERT IMAGE HERE
                 </div>
@@ -110,7 +110,7 @@ export default function Home() {
             </Link>
             {/* Project 2 card - now a square with placeholder image */}
             <Link href="/projects/project2/" className="block w-full">
-              <li className="aspect-square p-4 border-4 border-[#FFFDD0] shadow hover:shadow-lg hover:bg-[#28FFE5] hover:text-[#0D1B2A] transition-all duration-300 cursor-pointer flex flex-col justify-center items-center">
+              <li className="aspect-square p-4 border-2 border-[#FFFDD0] shadow hover:shadow-lg hover:bg-[#28FFE5] hover:text-[#0D1B2A] transition-all duration-300 cursor-pointer flex flex-col justify-center items-center">
                 <div className="w-full h-full bg-gray-400 flex items-center justify-center text-gray-700 font-bold">
                   INSERT IMAGE HERE
                 </div>
@@ -118,7 +118,7 @@ export default function Home() {
             </Link>
             {/* Project 3 card - now a square with placeholder image */}
             <Link href="/projects/project3/" className="block w-full">
-              <li className="aspect-square p-4 border-4 border-[#FFFDD0] shadow hover:shadow-lg hover:bg-[#28FFE5] hover:text-[#0D1B2A] transition-all duration-300 cursor-pointer flex flex-col justify-center items-center">
+              <li className="aspect-square p-4 border-2 border-[#FFFDD0] shadow hover:shadow-lg hover:bg-[#28FFE5] hover:text-[#0D1B2A] transition-all duration-300 cursor-pointer flex flex-col justify-center items-center">
                 <div className="w-full h-full bg-gray-400 flex items-center justify-center text-gray-700 font-bold">
                   INSERT IMAGE HERE
                 </div>
