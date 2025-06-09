@@ -44,7 +44,7 @@ export default function About() {
       <div className="flex justify-between items-center w-full">
         {/* Logo/brand mark with link to homepage */}
         <Link href="/">
-          <h2 className="text-xl font-semibold border-4 border-[#FFFDD0] p-3 hover:bg-[#28FFE5] hover:text-[#0D1B2A] transition-all duration-300 cursor-pointer">DX</h2>
+          <h2 className="text-xl font-semibold border-3 border-[#FFFDD0] p-3 hover:bg-[#28FFE5] hover:text-[#0D1B2A] transition-all duration-300 cursor-pointer">DX</h2>
         </Link>
         
         {/* Navigation buttons */}
@@ -57,14 +57,14 @@ export default function About() {
             onMouseLeave={handleMouseLeave}
           >
             <button 
-              className="text-xl font-semibold border-4 border-[#FFFDD0] p-3 hover:bg-[#28FFE5] hover:text-[#0D1B2A] transition-all duration-300"
+              className="text-xl font-semibold border-3 border-[#FFFDD0] p-3 hover:bg-[#28FFE5] hover:text-[#0D1B2A] transition-all duration-300"
             >
               Projects
             </button>
             {/* Dropdown menu with improved hover behavior */}
             {showProjectsDropdown && (
               <div 
-                className="absolute top-full right-0 mt-1 bg-[#0D1B2A] border-4 border-[#FFFDD0] w-40 z-10"
+                className="absolute top-full right-0 mt-1 bg-[#0D1B2A] border-3 border-[#FFFDD0] w-40 z-10"
               >
                 {/* Project links in dropdown */}
                 <Link href="/projects/project1">
@@ -81,71 +81,60 @@ export default function About() {
           </div>
           {/* Resume navigation button */}
           <Link href="/resume">
-            <button className="text-xl font-semibold border-4 border-[#FFFDD0] p-3 hover:bg-[#28FFE5] hover:text-[#0D1B2A] transition-all duration-300">
+            <button className="text-xl font-semibold border-3 border-[#FFFDD0] p-3 hover:bg-[#28FFE5] hover:text-[#0D1B2A] transition-all duration-300">
               Resume
             </button>
           </Link>
           {/* About navigation button - currently active */}
           <Link href="/about">
-            <button className="text-xl font-semibold border-4 border-[#FFFDD0] p-3 hover:bg-[#28FFE5] hover:text-[#0D1B2A] transition-all duration-300">
+            <button className="text-xl font-semibold border-3 border-[#FFFDD0] p-3 hover:bg-[#28FFE5] hover:text-[#0D1B2A] transition-all duration-300">
               About
             </button>
           </Link>
         </div>
       </div>
       
-      {/* Main content section */}
+      {/* Main content section for About page */}
       <div className="container mx-auto px-4 py-12">
         {/* Page title */}
         <h1 className="text-3xl font-bold mb-6">About Me</h1>
         
-        {/* About me content card */}
-        <div className="bg-[#0D1B2A] border-4 border-[#FFFDD0] shadow-md p-6 mb-6">
-          {/* Two-column layout (stacked on mobile, side-by-side on larger screens) */}
+        {/* About content with border */}
+        <div className="bg-[#0D1B2A] border-3 border-[#FFFDD0] shadow-md p-6 mb-6">
           <div className="flex flex-col md:flex-row gap-8">
-            {/* Left column - Image placeholder */}
-            <div className="md:w-1/3">
-              <div className="bg-[#1B263B] w-full aspect-square mb-4 flex items-center justify-center">
-                <p className="text-gray-300">Profile Image</p>
-              </div>
+            {/* Profile image placeholder */}
+            <div className="w-full md:w-1/3 bg-gray-400 aspect-square flex items-center justify-center text-gray-700 font-bold">
+              PROFILE IMAGE
             </div>
             
-            {/* Right column - Bio and info */}
-            <div className="md:w-2/3">
-              {/* Name heading */}
+            {/* About text content */}
+            <div className="w-full md:w-2/3">
               <h2 className="text-2xl font-semibold mb-4">Danny Xu</h2>
-              {/* Bio paragraphs */}
-              {/* REMINDER: Use &apos; instead of ' for apostrophes in JSX text */}
-              <p className="mb-4 text-gray-100">
-                I&apos;m a UI/UX designer from San Francisco.
+              <p className="mb-4">
+                Hello! I'm a designer and researcher passionate about creating intuitive, accessible, and meaningful digital experiences. 
+                With a background in cognitive science and human-computer interaction, I approach design problems with both analytical 
+                and creative thinking.
               </p>
-              {/* REMINDER: Use &apos; instead of ' for apostrophes in JSX text */}
-              <p className="mb-4 text-gray-100">
-                My journey in UI/UX design started at [UCSD], where I earned my 
-                degree in Cognitive Science w/specialization in Design and Interaction.
-                I have a design ethos that embodies the essense of an Oasis, 
-                Optimal functionality, Addictive engagement, Simple interaction, Intuitive usability, Satisfying outcomes.
+              <p className="mb-4">
+                My work focuses on understanding user needs and behaviors to design solutions that not only solve problems 
+                but also bring joy and efficiency to people's lives. I believe in iterative design processes and evidence-based decision making.
               </p>
-              {/* REMINDER: Use &apos; instead of ' for apostrophes in JSX text */}
-              <p className="mb-4 text-gray-100">
-                During my free time, I enjoy watching sports, my favorite teams being the Warriors,SF Giants, 49ers, and Manchester United.
-                I also love to learn the language, French, as during my time at UCSD, I was able to also double major in French.
+              <p className="mb-4">
+                When I'm not designing, you can find me hiking, experimenting with new recipes, or reading about emerging technologies.
               </p>
               
-              {/* Contact information section */}
+              {/* Skills section */}
               <div className="mt-6">
-                <h3 className="text-xl font-medium mb-3">Get in Touch</h3>
-                {/* Social/contact links with hover effects */}
-                <div className="flex gap-4">
-                  <a href="mailto:email@example.com" className="text-[#28FFE5] hover:text-[#FFFDD0] transition-all duration-300">
-                    dax002@ucsd.edu
-                  </a>
-                  <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" className="text-[#28FFE5] hover:text-[#FFFDD0] transition-all duration-300">
-                    LinkedIn
-                  </a>
-                  <a href="tel: +14156063787" target="_blank" rel="noopener noreferrer" className="text-[#28FFE5] hover:text-[#FFFDD0] transition-all duration-300">
-                    Call/Text Me
-                  </a>
+                <h3 className="text-xl font-semibold mb-3">Skills</h3>
+                <div className="flex flex-wrap gap-2">
+                  <span className="px-3 py-1 bg-[#28FFE5] text-[#0D1B2A] rounded-md">UX Research</span>
+                  <span className="px-3 py-1 bg-[#28FFE5] text-[#0D1B2A] rounded-md">UI Design</span>
+                  <span className="px-3 py-1 bg-[#28FFE5] text-[#0D1B2A] rounded-md">Prototyping</span>
+                  <span className="px-3 py-1 bg-[#28FFE5] text-[#0D1B2A] rounded-md">User Testing</span>
+                  <span className="px-3 py-1 bg-[#28FFE5] text-[#0D1B2A] rounded-md">Figma</span>
+                  <span className="px-3 py-1 bg-[#28FFE5] text-[#0D1B2A] rounded-md">HTML/CSS</span>
+                  <span className="px-3 py-1 bg-[#28FFE5] text-[#0D1B2A] rounded-md">JavaScript</span>
+                  <span className="px-3 py-1 bg-[#28FFE5] text-[#0D1B2A] rounded-md">Accessibility</span>
                 </div>
               </div>
             </div>
