@@ -2,6 +2,7 @@
 
 import { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image'; // Add this import
 
 export default function Home() {
   // State to control the visibility of the projects dropdown menu
@@ -104,10 +105,12 @@ export default function Home() {
             <Link href="/projects/project1/" className="block w-full">
               <li className="aspect-square border-3 border-transparent hover:border-[#FFFDD0] shadow hover:shadow-lg transition-all duration-300 cursor-pointer relative overflow-hidden">
                 {/* Project image with improved fitting */}
-                <img 
+                <Image 
                   src="/images/sdbike.png" 
                   alt="SD Bike Coalition" 
-                  className="w-full h-full object-cover absolute inset-0"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
                 {/* Overlay with title that appears on hover */}
                 <div 
@@ -134,10 +137,12 @@ export default function Home() {
             <Link href="/projects/project2/" className="block w-full">
               <li className="aspect-square border-3 border-transparent hover:border-[#FFFDD0] shadow hover:shadow-lg transition-all duration-300 cursor-pointer relative overflow-hidden">
                 {/* Project image */}
-                <img 
+                <Image 
                   src="/images/project2.jpg" 
                   alt="Project 2" 
-                  className="w-full h-full object-cover absolute inset-0"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
                 {/* Overlay with title that appears on hover */}
                 <div 
@@ -164,10 +169,12 @@ export default function Home() {
             <Link href="/projects/project3/" className="block w-full">
               <li className="aspect-square border-3 border-transparent hover:border-[#FFFDD0] shadow hover:shadow-lg transition-all duration-300 cursor-pointer relative overflow-hidden">
                 {/* Project image */}
-                <img 
+                <Image 
                   src="/images/project3.jpg" 
                   alt="Project 3" 
-                  className="w-full h-full object-cover absolute inset-0"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
                 {/* Overlay with title that appears on hover */}
                 <div 
