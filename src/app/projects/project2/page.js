@@ -2,6 +2,7 @@
 
 import { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Project2() {
   // State to control the visibility of the projects dropdown menu
@@ -10,6 +11,9 @@ export default function Project2() {
   const dropdownRef = useRef(null);
   // Timeout ref to manage the delay before closing
   const timeoutRef = useRef(null);
+  
+  // Add new state for the image modal
+  const [selectedImage, setSelectedImage] = useState(null);
 
   // Function to handle mouse enter on dropdown
   const handleMouseEnter = () => {
@@ -26,6 +30,16 @@ export default function Project2() {
     timeoutRef.current = setTimeout(() => {
       setShowProjectsDropdown(false);
     }, 100); // 100ms delay before closing
+  };
+
+  // Add new handler for image clicks
+  const handleImageClick = (imageSrc) => {
+    setSelectedImage(imageSrc);
+  };
+
+  // Add handler to close the modal
+  const closeModal = () => {
+    setSelectedImage(null);
   };
 
   // Cleanup effect for the timeout
@@ -96,13 +110,116 @@ export default function Project2() {
       
       {/* Project content */}
       <div className="container mx-auto px-4 py-12">
-        <h1 className="text-3xl font-bold mb-6">Project 2</h1>
+        <h1 className="text-3xl font-bold mb-6">Inch Scale Design</h1>
         
-        {/* Project details with border */}
-        <div className="bg-[#0D1B2A] border-3 border-[#FFFDD0] shadow-md p-6 mb-6">
-          {/* Project hero image */}
-          <div className="w-full h-[400px] bg-gray-400 mb-6 flex items-center justify-center text-gray-700 font-bold">
-            PROJECT HERO IMAGE
+        {/* Project details with dashed border */}
+        <div className="bg-[#0D1B2A] custom-dashed-border shadow-md p-6 mb-6">
+          {/* Project hero image with progression layout */}
+          <div className="w-full mb-6">
+            <div className="flex flex-col md:flex-row items-center justify-center gap-4 py-8">
+              {/* First image - reduced size and clickable */}
+              <div 
+                className="w-1/2 md:w-1/6 aspect-square relative mx-auto cursor-pointer overflow-hidden border-3 border-transparent hover:border-[#FFFDD0] shadow hover:shadow-lg transition-all duration-300"
+                onClick={() => handleImageClick('/images/inchscale1.png')}
+              >
+                <Image 
+                  src="/images/inchscale1.png" 
+                  alt="Initial design" 
+                  fill
+                  className="object-contain"
+                />
+                {/* Overlay with title that appears on hover */}
+                <div 
+                  className="absolute inset-0 flex items-center justify-center transition-all duration-300"
+                  style={{
+                    background: 'rgba(13, 27, 42, 0)', // Transparent navy blue initially
+                    opacity: 0 // Entire overlay starts invisible
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.background = 'rgba(13, 27, 42, 0.6)'; // 60% opacity on hover
+                    e.currentTarget.style.opacity = 1; // Make overlay visible
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.background = 'rgba(13, 27, 42, 0)'; // Back to transparent
+                    e.currentTarget.style.opacity = 0; // Hide overlay
+                  }}
+                >
+                  <h3 className="text-sm font-semibold text-white">Initial Design</h3>
+                </div>
+              </div>
+              
+              {/* Arrow */}
+              <div className="flex items-center justify-center text-4xl text-[#FFFDD0] transform rotate-90 md:rotate-0 my-4 md:my-0">
+                →
+              </div>
+              
+              {/* Second image - reduced size and clickable */}
+              <div 
+                className="w-1/2 md:w-1/6 aspect-square relative mx-auto cursor-pointer overflow-hidden border-3 border-transparent hover:border-[#FFFDD0] shadow hover:shadow-lg transition-all duration-300"
+                onClick={() => handleImageClick('/images/inchscale2.png')}
+              >
+                <Image 
+                  src="/images/inchscale2.png" 
+                  alt="Design iteration" 
+                  fill
+                  className="object-contain"
+                />
+                {/* Overlay with title that appears on hover */}
+                <div 
+                  className="absolute inset-0 flex items-center justify-center transition-all duration-300"
+                  style={{
+                    background: 'rgba(13, 27, 42, 0)',
+                    opacity: 0
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.background = 'rgba(13, 27, 42, 0.6)';
+                    e.currentTarget.style.opacity = 1;
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.background = 'rgba(13, 27, 42, 0)';
+                    e.currentTarget.style.opacity = 0;
+                  }}
+                >
+                  <h3 className="text-sm font-semibold text-white">Design Iteration</h3>
+                </div>
+              </div>
+              
+              {/* Arrow */}
+              <div className="flex items-center justify-center text-4xl text-[#FFFDD0] transform rotate-90 md:rotate-0 my-4 md:my-0">
+                →
+              </div>
+              
+              {/* Third image - reduced size and clickable */}
+              <div 
+                className="w-1/2 md:w-1/6 aspect-square relative mx-auto cursor-pointer overflow-hidden border-3 border-transparent hover:border-[#FFFDD0] shadow hover:shadow-lg transition-all duration-300"
+                onClick={() => handleImageClick('/images/inchscale3.png')}
+              >
+                <Image 
+                  src="/images/inchscale3.png" 
+                  alt="Final design" 
+                  fill
+                  className="object-contain"
+                />
+                {/* Overlay with title that appears on hover */}
+                <div 
+                  className="absolute inset-0 flex items-center justify-center transition-all duration-300"
+                  style={{
+                    background: 'rgba(13, 27, 42, 0)',
+                    opacity: 0
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.background = 'rgba(13, 27, 42, 0.6)';
+                    e.currentTarget.style.opacity = 1;
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.background = 'rgba(13, 27, 42, 0)';
+                    e.currentTarget.style.opacity = 0;
+                  }}
+                >
+                  <h3 className="text-sm font-semibold text-white">Final Design</h3>
+                </div>
+              </div>
+            </div>
           </div>
           
           {/* Project info */}
@@ -139,19 +256,19 @@ export default function Project2() {
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-4">
               {/* Research */}
-              <div className="border-3 border-[#FFFDD0] p-4">
+              <div className="custom-dashed-border p-4">
                 <h3 className="text-xl font-semibold mb-2">Research</h3>
                 <p>Description of the research methods used, insights gathered, and how they informed the design.</p>
               </div>
               
               {/* Design */}
-              <div className="border-3 border-[#FFFDD0] p-4">
+              <div className="custom-dashed-border p-4">
                 <h3 className="text-xl font-semibold mb-2">Design</h3>
                 <p>Explanation of the design process, from sketches to wireframes to final designs.</p>
               </div>
               
               {/* Testing */}
-              <div className="border-3 border-[#FFFDD0] p-4">
+              <div className="custom-dashed-border p-4">
                 <h3 className="text-xl font-semibold mb-2">Testing</h3>
                 <p>Details on how the design was tested, feedback received, and iterations made.</p>
               </div>
@@ -168,6 +285,32 @@ export default function Project2() {
           </div>
         </div>
       </div>
+      
+      {/* Image Modal */}
+      {selectedImage && (
+        <div 
+          className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 p-4"
+          onClick={closeModal}
+        >
+          <div 
+            className="relative max-w-4xl max-h-[90vh] w-full h-full"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <Image
+              src={selectedImage}
+              alt="Enlarged design"
+              fill
+              className="object-contain"
+            />
+            <button 
+              className="absolute top-2 right-2 bg-[#0D1B2A] text-white p-2 rounded-full"
+              onClick={closeModal}
+            >
+              ✕
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
