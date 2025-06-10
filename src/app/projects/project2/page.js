@@ -224,14 +224,43 @@ export default function Project2() {
           
           {/* Project info */}
           <div className="mb-8">
-            <h2 className="text-2xl font-semibold mb-4">Project Overview</h2>
+            <h2 className="text-2xl font-semibold mb-4">Overview</h2>
             <p className="mb-4">
-              This is a detailed description of Project 2. It explains the challenge, approach, and solution 
-              of this particular project. The text provides insights into the design process, methodologies used, 
-              and key decisions made throughout the project.
+              The purpose of this project was to create a design that would fit on an inch scale display such as an Apple Watch.
+              Essentially, the design needed to be simple but effective, allowing users to gains as much information as possible.
+              For this project, I used Figma to create the designs of a display of a transit app that would be used by frequent
+              public transport commuters to new users of public transport.
             </p>
+          </div>
+          
+          {/* Process section - moved up, before challenge/solution */}
+          <div className="mb-8">
+            <h2 className="text-2xl font-semibold mb-4">Design Process</h2>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+            <div className="flex flex-col gap-8 mt-4">
+              {/* Research row */}
+              <div className="p-4">
+                <h3 className="text-xl font-semibold mb-2">Research</h3>
+                <p>Description of the research methods used, insights gathered, and how they informed the design.</p>
+              </div>
+              
+              {/* Design row */}
+              <div className="p-4">
+                <h3 className="text-xl font-semibold mb-2">Design</h3>
+                <p>Explanation of the design process, from sketches to wireframes to final designs.</p>
+              </div>
+              
+              {/* Feedback row */}
+              <div className="p-4">
+                <h3 className="text-xl font-semibold mb-2">Feedback</h3>
+                <p>Details on how the design was tested, feedback received, and iterations made.</p>
+              </div>
+            </div>
+          </div>
+          
+          {/* Challenge/Solution section - moved down, after process */}
+          <div className="mb-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
                 <h3 className="text-xl font-semibold mb-3">Challenge</h3>
                 <p>
@@ -250,34 +279,9 @@ export default function Project2() {
             </div>
           </div>
           
-          {/* Process section */}
-          <div className="mb-8">
-            <h2 className="text-2xl font-semibold mb-4">Process</h2>
-            
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-4">
-              {/* Research */}
-              <div className="custom-dashed-border p-4">
-                <h3 className="text-xl font-semibold mb-2">Research</h3>
-                <p>Description of the research methods used, insights gathered, and how they informed the design.</p>
-              </div>
-              
-              {/* Design */}
-              <div className="custom-dashed-border p-4">
-                <h3 className="text-xl font-semibold mb-2">Design</h3>
-                <p>Explanation of the design process, from sketches to wireframes to final designs.</p>
-              </div>
-              
-              {/* Testing */}
-              <div className="custom-dashed-border p-4">
-                <h3 className="text-xl font-semibold mb-2">Testing</h3>
-                <p>Details on how the design was tested, feedback received, and iterations made.</p>
-              </div>
-            </div>
-          </div>
-          
-          {/* Results section */}
+          {/* Results section - keep as is */}
           <div>
-            <h2 className="text-2xl font-semibold mb-4">Results</h2>
+            <h2 className="text-2xl font-semibold mb-4">Final Design</h2>
             <p className="mb-4">
               The outcomes and impact of the project, including any metrics, user feedback, or business results 
               that demonstrate the success of the solution.
