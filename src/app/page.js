@@ -70,7 +70,7 @@ export default function Home() {
                   <div className="p-2 hover:bg-[#28FFE5] hover:text-[#0D1B2A] hover:font-bold transition-all duration-300 cursor-pointer">SD Bike Coalition</div>
                 </Link>
                 <Link href="/projects/project2">
-                  <div className="p-2 hover:bg-[#28FFE5] hover:text-[#0D1B2A] hover:font-bold transition-all duration-300 cursor-pointer">Project 2</div>
+                  <div className="p-2 hover:bg-[#28FFE5] hover:text-[#0D1B2A] hover:font-bold transition-all duration-300 cursor-pointer">Inch Scale Design</div>
                 </Link>
                 <Link href="/projects/project3">
                   <div className="p-2 hover:bg-[#28FFE5] hover:text-[#0D1B2A] hover:font-bold transition-all duration-300 cursor-pointer">Project 3</div>
@@ -138,7 +138,7 @@ export default function Home() {
               <li className="aspect-square border-3 border-transparent hover:border-[#FFFDD0] shadow hover:shadow-lg transition-all duration-300 cursor-pointer relative overflow-hidden">
                 {/* Project image */}
                 <Image 
-                  src="/images/project2.jpg" 
+                  src="/images/inchscale3.png" 
                   alt="Project 2" 
                   fill
                   className="object-cover"
@@ -160,7 +160,7 @@ export default function Home() {
                     e.currentTarget.style.opacity = 0; // Hide overlay
                   }}
                 >
-                  <h3 className="text-xl font-semibold text-white">Project 2</h3>
+                  <h3 className="text-xl font-semibold text-white">Inch Scale Design</h3>
                 </div>
               </li>
             </Link>

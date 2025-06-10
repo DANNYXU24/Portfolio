@@ -71,7 +71,7 @@ export default function Project1() {
                   <div className="p-2 hover:bg-[#28FFE5] hover:text-[#0D1B2A] hover:font-bold transition-all duration-300 cursor-pointer">SD Bike Coalition</div>
                 </Link>
                 <Link href="/projects/project2">
-                  <div className="p-2 hover:bg-[#28FFE5] hover:text-[#0D1B2A] hover:font-bold transition-all duration-300 cursor-pointer">Project 2</div>
+                  <div className="p-2 hover:bg-[#28FFE5] hover:text-[#0D1B2A] hover:font-bold transition-all duration-300 cursor-pointer">Inch Scale Design</div>
                 </Link>
                 <Link href="/projects/project3">
                   <div className="p-2 hover:bg-[#28FFE5] hover:text-[#0D1B2A] hover:font-bold transition-all duration-300 cursor-pointer">Project 3</div>
@@ -96,7 +96,7 @@ export default function Project1() {
       
       {/* Project content */}
       <div className="container mx-auto px-4 py-12">
-        <h1 className="text-3xl font-bold mb-6">Project 1</h1>
+        <h1 className="text-3xl font-bold mb-6">SD Bike Coalition - In Construction</h1>
         
         {/* Project details with border */}
         <div className="bg-[#0D1B2A] border-3 border-[#FFFDD0] shadow-md p-6 mb-6">
