@@ -95,11 +95,11 @@ export default function Project1() {
       </div>
       
       {/* Project content */}
-      <div className="container mx-auto px-4 py-12">
-        <h1 className="text-3xl font-bold mb-6">SD Bike Coalition - In Construction</h1>
+      <div className="flex flex-col gap-4 items-start w-full">
+        <h1 className="text-4xl font-semibold">SD Bike Coalition</h1>
         
-        {/* Project details with border */}
-        <div className="bg-[#0D1B2A] custom-dashed-border shadow-md p-6 mb-6">
+        {/* Project details with dashed border */}
+        <div className="bg-[#0D1B2A] custom-dashed-border shadow-md p-6 mb-6 w-full">
           {/* Project hero image */}
           <div className="w-full h-[400px] bg-gray-400 mb-6 flex items-center justify-center text-gray-700 font-bold">
             PROJECT HERO IMAGE

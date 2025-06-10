@@ -2,6 +2,7 @@
 
 import { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Project3() {
   // State to control the visibility of the projects dropdown menu
@@ -95,11 +96,11 @@ export default function Project3() {
       </div>
       
       {/* Project content */}
-      <div className="container mx-auto px-4 py-12">
-        <h1 className="text-3xl font-bold mb-6">Project 3</h1>
+      <div className="flex flex-col gap-4 items-start w-full">
+        <h1 className="text-4xl font-semibold">Project 3</h1>
         
-        {/* Project details with border */}
-        <div className="bg-[#0D1B2A] border-3 border-[#FFFDD0] shadow-md p-6 mb-6">
+        {/* Project details with dashed border instead of solid */}
+        <div className="bg-[#0D1B2A] custom-dashed-border shadow-md p-6 mb-6 w-full">
           {/* Project hero image */}
           <div className="w-full h-[400px] bg-gray-400 mb-6 flex items-center justify-center text-gray-700 font-bold">
             PROJECT HERO IMAGE
@@ -139,19 +140,19 @@ export default function Project3() {
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-4">
               {/* Research */}
-              <div className="border-3 border-[#FFFDD0] p-4">
+              <div className="custom-dashed-border p-4">
                 <h3 className="text-xl font-semibold mb-2">Research</h3>
                 <p>Description of the research methods used, insights gathered, and how they informed the design.</p>
               </div>
               
               {/* Design */}
-              <div className="border-3 border-[#FFFDD0] p-4">
+              <div className="custom-dashed-border p-4">
                 <h3 className="text-xl font-semibold mb-2">Design</h3>
                 <p>Explanation of the design process, from sketches to wireframes to final designs.</p>
               </div>
               
               {/* Testing */}
-              <div className="border-3 border-[#FFFDD0] p-4">
+              <div className="custom-dashed-border p-4">
                 <h3 className="text-xl font-semibold mb-2">Testing</h3>
                 <p>Details on how the design was tested, feedback received, and iterations made.</p>
               </div>

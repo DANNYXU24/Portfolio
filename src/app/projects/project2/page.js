@@ -109,11 +109,11 @@ export default function Project2() {
       </div>
       
       {/* Project content */}
-      <div className="container mx-auto px-4 py-12">
-        <h1 className="text-3xl font-bold mb-6">Inch Scale Design</h1>
+      <div className="flex flex-col gap-4 items-start w-full">
+        <h1 className="text-4xl font-semibold">Inch Scale Design</h1>
         
         {/* Project details with dashed border */}
-        <div className="bg-[#0D1B2A] custom-dashed-border shadow-md p-6 mb-6">
+        <div className="bg-[#0D1B2A] custom-dashed-border shadow-md p-6 mb-6 w-full">
           {/* Project hero image with progression layout */}
           <div className="w-full mb-6">
             <div className="flex flex-col md:flex-row items-center justify-center gap-4 py-8">
