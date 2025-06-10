@@ -292,7 +292,7 @@ export default function Project2() {
             <h2 className="text-2xl font-semibold mb-4 text-[#FFFDD0]">Future Directions</h2>
             <p className="mb-4">
               In the future, I would like to implement this design into a real app that people could use.
-              Before doing this, I would like to do more user testing on the "directions back home" feature to see if it is actually intuitive to the user.
+              Before doing this, I would like to do more user testing on the &quot;directions back home&quot; feature to see if it is actually intuitive to the user.
             </p>
           </div>
         </div>
