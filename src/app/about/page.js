@@ -100,7 +100,7 @@ export default function About() {
         <h1 className="text-4xl font-semibold mb-6">About Me</h1>
         
         {/* About content with border */}
-        <div className="bg-[#0D1B2A] border-3 border-[#FFFDD0] shadow-md p-6 mb-6 w-full">
+        <div className="bg-[#0D1B2A] custom-dashed-border shadow-md p-6 mb-6 w-full">
           <div className="flex flex-col md:flex-row gap-8">
             {/* Profile image placeholder */}
             <div className="w-full md:w-1/3 bg-gray-400 aspect-square flex items-center justify-center text-gray-700 font-bold">
@@ -122,21 +122,6 @@ export default function About() {
               <p className="mb-4">
                 When I'm not designing, you can find me hiking, experimenting with new recipes, or reading about emerging technologies.
               </p>
-              
-              {/* Skills section */}
-              <div className="mt-6">
-                <h3 className="text-xl font-semibold mb-3">Skills</h3>
-                <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-1 bg-[#28FFE5] text-[#0D1B2A] rounded-md">UX Research</span>
-                  <span className="px-3 py-1 bg-[#28FFE5] text-[#0D1B2A] rounded-md">UI Design</span>
-                  <span className="px-3 py-1 bg-[#28FFE5] text-[#0D1B2A] rounded-md">Prototyping</span>
-                  <span className="px-3 py-1 bg-[#28FFE5] text-[#0D1B2A] rounded-md">User Testing</span>
-                  <span className="px-3 py-1 bg-[#28FFE5] text-[#0D1B2A] rounded-md">Figma</span>
-                  <span className="px-3 py-1 bg-[#28FFE5] text-[#0D1B2A] rounded-md">HTML/CSS</span>
-                  <span className="px-3 py-1 bg-[#28FFE5] text-[#0D1B2A] rounded-md">JavaScript</span>
-                  <span className="px-3 py-1 bg-[#28FFE5] text-[#0D1B2A] rounded-md">Accessibility</span>
-                </div>
-              </div>
             </div>
           </div>
         </div>

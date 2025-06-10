@@ -100,27 +100,92 @@ export default function Home() {
         <div className="portfolio w-full">
           {/* Project grid with responsive columns (1 on mobile, 2 on tablet, 3 on desktop) */}
           <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
-            {/* Project 1 card - now a square with placeholder image */}
+            {/* Project 1 card - with hover overlay and title */}
             <Link href="/projects/project1/" className="block w-full">
-              <li className="aspect-square p-4 border-3 border-[#FFFDD0] shadow hover:shadow-lg hover:bg-[#28FFE5] hover:text-[#0D1B2A] transition-all duration-300 cursor-pointer flex flex-col justify-center items-center">
-                <div className="w-full h-full bg-gray-400 flex items-center justify-center text-gray-700 font-bold">
-                  INSERT IMAGE HERE
+              <li className="aspect-square border-3 border-transparent hover:border-[#FFFDD0] shadow hover:shadow-lg transition-all duration-300 cursor-pointer relative overflow-hidden">
+                {/* Project image with improved fitting */}
+                <img 
+                  src="/images/sdbike.png" 
+                  alt="SD Bike Coalition" 
+                  className="w-full h-full object-cover absolute inset-0"
+                />
+                {/* Overlay with title that appears on hover */}
+                <div 
+                  className="absolute inset-0 flex items-center justify-center transition-all duration-300"
+                  style={{
+                    background: 'rgba(13, 27, 42, 0)', // Transparent navy blue initially (0 opacity)
+                    opacity: 0 // Entire overlay starts invisible
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.background = 'rgba(13, 27, 42, 0.6)'; // 60% opacity on hover
+                    e.currentTarget.style.opacity = 1; // Make overlay visible
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.background = 'rgba(13, 27, 42, 0)'; // Back to transparent
+                    e.currentTarget.style.opacity = 0; // Hide overlay
+                  }}
+                >
+                  <h3 className="text-xl font-semibold text-white">SD Bike Coalition</h3>
                 </div>
               </li>
             </Link>
-            {/* Project 2 card - now a square with placeholder image */}
+            
+            {/* Project 2 card - with hover overlay and title */}
             <Link href="/projects/project2/" className="block w-full">
-              <li className="aspect-square p-4 border-3 border-[#FFFDD0] shadow hover:shadow-lg hover:bg-[#28FFE5] hover:text-[#0D1B2A] transition-all duration-300 cursor-pointer flex flex-col justify-center items-center">
-                <div className="w-full h-full bg-gray-400 flex items-center justify-center text-gray-700 font-bold">
-                  INSERT IMAGE HERE
+              <li className="aspect-square border-3 border-transparent hover:border-[#FFFDD0] shadow hover:shadow-lg transition-all duration-300 cursor-pointer relative overflow-hidden">
+                {/* Project image */}
+                <img 
+                  src="/images/project2.jpg" 
+                  alt="Project 2" 
+                  className="w-full h-full object-cover absolute inset-0"
+                />
+                {/* Overlay with title that appears on hover */}
+                <div 
+                  className="absolute inset-0 flex items-center justify-center transition-all duration-300"
+                  style={{
+                    background: 'rgba(13, 27, 42, 0)', // Transparent navy blue initially (0 opacity)
+                    opacity: 0 // Entire overlay starts invisible
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.background = 'rgba(13, 27, 42, 0.6)'; // 60% opacity on hover
+                    e.currentTarget.style.opacity = 1; // Make overlay visible
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.background = 'rgba(13, 27, 42, 0)'; // Back to transparent
+                    e.currentTarget.style.opacity = 0; // Hide overlay
+                  }}
+                >
+                  <h3 className="text-xl font-semibold text-white">Project 2</h3>
                 </div>
               </li>
             </Link>
-            {/* Project 3 card - now a square with placeholder image */}
+            
+            {/* Project 3 card - with hover overlay and title */}
             <Link href="/projects/project3/" className="block w-full">
-              <li className="aspect-square p-4 border-3 border-[#FFFDD0] shadow hover:shadow-lg hover:bg-[#28FFE5] hover:text-[#0D1B2A] transition-all duration-300 cursor-pointer flex flex-col justify-center items-center">
-                <div className="w-full h-full bg-gray-400 flex items-center justify-center text-gray-700 font-bold">
-                  INSERT IMAGE HERE
+              <li className="aspect-square border-3 border-transparent hover:border-[#FFFDD0] shadow hover:shadow-lg transition-all duration-300 cursor-pointer relative overflow-hidden">
+                {/* Project image */}
+                <img 
+                  src="/images/project3.jpg" 
+                  alt="Project 3" 
+                  className="w-full h-full object-cover absolute inset-0"
+                />
+                {/* Overlay with title that appears on hover */}
+                <div 
+                  className="absolute inset-0 flex items-center justify-center transition-all duration-300"
+                  style={{
+                    background: 'rgba(13, 27, 42, 0)', // Transparent navy blue initially (0 opacity)
+                    opacity: 0 // Entire overlay starts invisible
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.background = 'rgba(13, 27, 42, 0.6)'; // 60% opacity on hover
+                    e.currentTarget.style.opacity = 1; // Make overlay visible
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.background = 'rgba(13, 27, 42, 0)'; // Back to transparent
+                    e.currentTarget.style.opacity = 0; // Hide overlay
+                  }}
+                >
+                  <h3 className="text-xl font-semibold text-white">Project 3</h3>
                 </div>
               </li>
             </Link>
