@@ -96,7 +96,7 @@ export default function Home() {
       {/* Main content section */}
       <main className="flex flex-col gap-4 items-start w-full">
         {/* User name/title */}
-        <h2 className="text-4xl font-semibold">Danny Xu</h2>
+        <h2 className="text-5xl font-semibold">Danny Xu</h2>
         {/* Portfolio grid container */}
         <div className="portfolio w-full">
           {/* Project grid with responsive columns (1 on mobile, 2 on tablet, 3 on desktop) */}

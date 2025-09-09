@@ -97,7 +97,7 @@ export default function Resume() {
       {/* Main content section - make sure this maintains the same spacing as homepage */}
       <main className="flex flex-col gap-4 items-start w-full">
         {/* Page title - similar position to "Danny Xu" on homepage */}
-        <h1 className="text-4xl font-semibold mb-6">Resume</h1>
+        <h1 className="text-5xl font-semibold mb-6">Resume</h1>
         
         {/* Resume content with dashed border */}
         <div className="bg-[#0D1B2A] custom-dashed-border shadow-md p-6 mb-6 w-full">

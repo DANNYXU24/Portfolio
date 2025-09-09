@@ -97,7 +97,7 @@ export default function Project3() {
       
       {/* Project content */}
       <div className="flex flex-col gap-4 items-start w-full">
-        <h1 className="text-4xl font-semibold">Project 3</h1>
+        <h1 className="text-5xl font-semibold">Project 3</h1>
         
         {/* Project details with dashed border instead of solid */}
         <div className="bg-[#0D1B2A] custom-dashed-border shadow-md p-6 mb-6 w-full">
