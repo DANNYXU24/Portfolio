@@ -298,7 +298,7 @@ export default function Project2() {
       {/* Image Modal */}
       {selectedImage && (
         <div 
-          className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 p-4"
+          className="fixed inset-0 bg-[#0D1B2A] bg-opacity-70 flex items-center justify-center z-50 p-4"
           onClick={closeModal}
         >
           <div 
