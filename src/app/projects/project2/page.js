@@ -267,23 +267,20 @@ export default function Project2() {
             </div>
           </div>
           
-          {/* Challenge/Solution section - moved down, after process */}
+          {/* Challenge/Solution section - separated into their own rows */}
           <div className="mb-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div>
-                <h3 className="text-xl font-semibold mb-3">Challenge</h3>
-                <p>
-                  A challenge I had, creating this interface, was finding a way of using as much real estate as possible without cluttering the screen and overwhelming the user with information. 
-                  
-                </p>
-              </div>
-              
-              <div>
-                <h3 className="text-xl font-semibold mb-3">Solution</h3>
-                <p>
-                  The solution that I found helpful was to making key elements bigger and adding as little text as possible. 
-                </p>
-              </div>
+            <div>
+              <h3 className="text-xl font-semibold mb-3">Challenge</h3>
+              <p>
+                A challenge I had, creating this interface, was finding a way of using as much real estate as possible without cluttering the screen and overwhelming the user with information. 
+              </p>
+            </div>
+
+            <div className="mt-6">
+              <h3 className="text-xl font-semibold mb-3">Solution</h3>
+              <p>
+                The solution that I found helpful was to making key elements bigger and adding as little text as possible. 
+              </p>
             </div>
           </div>
           
