@@ -114,10 +114,10 @@ export default function About() {
                 I&apos;m a UI/UX designer from San Francisco.
               </p>
               <p className="mb-4">
-                My journey in UI/UX design started at UCSD, where I earned my degree in Cognitive Science w/specialization in Design and Interaction. I have a design ethos that embodies the essense of an Oasis, Optimal functionality, Addictive engagement, Simple interaction, Intuitive usability, Satisfying outcomes.
+                My journey in UI/UX design started at UCSD, where I am currently earning my degree in Cognitive Science with specialization in Design and Interaction. I have a design ethos that embodies the essence of an Oasis: Optimal functionality, Addictive engagement, Simple interaction, Intuitive usability, Satisfying outcomes.
               </p>
               <p className="mb-4">
-                During my free time, I enjoy watching sports, my favorite teams being the Warriors, SF Giants, 49ers, and Manchester United. I also love to learn the language, French, as during my time at UCSD, I was able to also double major in French.
+                During my free time, I enjoy watching sports, my favorite teams being the Warriors, SF Giants, 49ers, and Manchester United. My other interests lie in playing games and learning languages. In addition to my B.S. in Cognitive Science, I am also working towards a B.A. in Language Studies, specifically for French.
               </p>
             </div>
           </div>
