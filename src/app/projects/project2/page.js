@@ -224,24 +224,27 @@ export default function Project2() {
           
           {/* Project info */}
           <div className="mb-8">
-            <h2 className="text-2xl font-semibold mb-4 text-[#FFFDD0]">Overview</h2>
+            <h2 className="text-2xl font-semibold mb-4 text-[#d0d2ff]">Overview</h2>
             <p className="mb-4">
               The purpose of this project was to create a design that would fit on an inch scale display such as an Apple Watch.
-              Essentially, the design needed to be simple but effective, allowing users to gains as much information as possible.
+              Essentially, the design needed to be simple but effective, allowing users to gain as much information as possible.
               For this project, I used Figma to create the designs of a display of a transit app that would be used by frequent
               public transport commuters to new users of public transport.
             </p>
           </div>
           
-          {/* Process section - with cream-colored main heading */}
+          {/* Divider after Overview */}
+          <hr className="border-t border-[#FFFEEC] opacity-20 my-6" />
+          
+          {/* Design Process Section */}
           <div className="mb-8">
-            <h2 className="text-2xl font-semibold mb-4 text-[#FFFDD0]">Design Process</h2>
+            <h2 className="text-2xl font-semibold mb-4 text-[#d0d2ff]">Design Process</h2>
             
-            <div className="flex flex-col gap-8 mt-4">
-              {/* Research row - with white subheading */}
+            <div className="flex flex-col gap-4 mt-4">
+              {/* Identifying Key Features */}
               <div>
                 <h3 className="text-xl font-semibold mb-3">Identifying Key Features</h3>
-                <p className="ml-0">
+                <p>
                   During this phase, I looked into existing transit apps and jotted down the key common features
                   that were shared between the apps. I am also a frequent user of public transport, so I
                   was able to use my own experiences to note down the key features that I would need in 
@@ -250,12 +253,12 @@ export default function Project2() {
                 </p>
               </div>
               
-              {/* Design row - with white subheading */}
+              {/* Design and Feedback */}
               <div>
                 <h3 className="text-xl font-semibold mb-3">Design and Feedback</h3>
                 <p className="ml-0">
                   For the initial design, I went with a very simple layout that would allow users to see the bus times but at the same time limit the features
-                  as I did not want to overwhelm the user with information and cluter the interface as it is a inch scale design.
+                  as I did not want to overwhelm the user with information and clutter the interface as it is an inch scale design.
                   For each bus stop, they would click on the bus stop to see the bus times for that stop.
                   After the initial design, I would ask for feedback from others and a common theme that I would get was the map was too dominant and the bus times overlay was too small.
                   This would then lead me to create the second design, which would be more focused on the bus times and less on the map.
@@ -264,29 +267,31 @@ export default function Project2() {
                   when I was using public transport. Users using this interface would be able to click on any bus stop on the map and see the bus times for that stop, as well as the directions back home.
                 </p>
               </div>
-            </div>
-          </div>
-          
-          {/* Challenge/Solution section - separated into their own rows */}
-          <div className="mb-8">
-            <div>
-              <h3 className="text-xl font-semibold mb-3">Challenge</h3>
-              <p>
-                A challenge I had, creating this interface, was finding a way of using as much real estate as possible without cluttering the screen and overwhelming the user with information. 
-              </p>
-            </div>
 
-            <div className="mt-6">
-              <h3 className="text-xl font-semibold mb-3">Solution</h3>
-              <p>
-                The solution that I found helpful was to making key elements bigger and adding as little text as possible. 
-              </p>
+              {/* Challenge */}
+              <div>
+                <h3 className="text-xl font-semibold mb-3">Challenge</h3>
+                <p>
+                  A challenge I had, creating this interface, was finding a way of using as much real estate as possible without cluttering the screen and overwhelming the user with information. 
+                </p>
+              </div>
+
+              {/* Solution */}
+              <div>
+                <h3 className="text-xl font-semibold mb-3">Solution</h3>
+                <p>
+                  The solution that I found helpful was to make key elements bigger and add as little text as possible. 
+                </p>
+              </div>
             </div>
           </div>
           
-          {/* Results section - keep as is */}
+          {/* Divider after Design Process */}
+          <hr className="border-t border-[#FFFEEC] opacity-20 my-6" />
+          
+          {/* Future Directions Section */}
           <div>
-            <h2 className="text-2xl font-semibold mb-4 text-[#FFFDD0]">Future Directions</h2>
+            <h2 className="text-2xl font-semibold mb-4 text-[#d0d2ff]">Future Directions</h2>
             <p className="mb-4">
               In the future, I would like to implement this design into a real app that people could use.
               Before doing this, I would like to do more user testing on the &quot;directions back home&quot; feature to see if it is actually intuitive to the user.
@@ -299,11 +304,11 @@ export default function Project2() {
       {selectedImage && (
         <div 
           className="fixed inset-0 bg-[#0D1B2A] bg-opacity-30 flex items-center justify-center z-50 p-4"
-          onClick={closeModal}
+          onClick={closeModal} // Close modal when clicking outside the image
         >
           <div 
             className="relative max-w-4xl max-h-[90vh] w-full h-full"
-            onClick={(e) => e.stopPropagation()}
+            onClick={(e) => e.stopPropagation()} // Prevent closing when clicking inside the modal
           >
             <Image
               src={selectedImage}
@@ -313,7 +318,7 @@ export default function Project2() {
             />
             <button 
               className="absolute top-2 right-2 bg-[#0D1B2A] text-white p-2 rounded-full"
-              onClick={closeModal}
+              onClick={closeModal} // Close modal when clicking the close button
             >
               ✕
             </button>
