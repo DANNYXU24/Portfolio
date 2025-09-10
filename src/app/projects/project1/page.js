@@ -144,7 +144,7 @@ export default function Project1() {
                 <p>
                   For research we looked at other non-profit organizations such as the California Bike Coalition and San Diego Bike Club.
                   We noticed that their websites really put an emphazis our their mission statement, a strong push for donations, and a clear way to see upcoming events.
-                  We then focus on the SD Bike Coalition's current website to see what they were doing well and what could be improved by doing heuristic testing.
+                  We then focus on the SD Bike Coalition&apos;s current website to see what they were doing well and what could be improved by doing heuristic testing.
                   We noticed a lot of text cluster, inconsistent button and text sizes, and a lot of unnecessary elements and animations such as a text ticker. 
                 </p>
               </div>
