@@ -124,10 +124,9 @@ export default function Project1() {
             <h2 className="text-2xl font-semibold mb-4 text-[#d0d2ff]">Overview</h2>
             
             <p className="mb-4">
-              The purpose of this project was to create a design that would fit on an inch scale display such as an Apple Watch.
-              Essentially, the design needed to be simple but effective, allowing users to gain as much information as possible.
-              For this project, I used Figma to create the designs of a display of a transit app that would be used by frequent
-              public transport commuters to new users of public transport.
+              SD Bike Coalition is a non-profit organization that aims to build the bike community in San Diego through advocacy, education, and events. For this
+              project me and my team worked with the coalition to help redesign their home page to better reflect their mission and values. 
+              The goal was to create a more engaging and user-friendly experience for visitors, encouraging them to get involved with the coalition&apos;s initiatives.
             </p>
           </div>
           
@@ -143,11 +142,10 @@ export default function Project1() {
               <div>
                 <h3 className="text-xl font-semibold mb-3">Research</h3>
                 <p>
-                  During this phase, I looked into existing transit apps and jotted down the key common features
-                  that were shared between the apps. I am also a frequent user of public transport, so I
-                  was able to use my own experiences to note down the key features that I would need in 
-                  a transit app. Before starting to design the interface, I would create mock tasks, to help
-                  me better gauge what features would be most important to the user in order to complete the tasks.
+                  For research we looked at other non-profit organizations such as the California Bike Coalition and San Diego Bike Club.
+                  We noticed that their websites really put an emphazis our their mission statement, a strong push for donations, and a clear way to see upcoming events.
+                  We then focus on the SD Bike Coalition's current website to see what they were doing well and what could be improved by doing heuristic testing.
+                  We noticed a lot of text cluster, inconsistent button and text sizes, and a lot of unnecessary elements and animations such as a text ticker. 
                 </p>
               </div>
               
@@ -222,17 +220,16 @@ export default function Project1() {
 
               {/* Challenge */}
               <div>
-                <h3 className="text-xl font-semibold mb-3">Testing and Feedback</h3>
+                <h3 className="text-xl font-semibold mb-3">Challenges</h3>
                 <p>
                   A challenge I had, creating this interface, was finding a way of using as much real estate as possible without cluttering the screen and overwhelming the user with information. 
                 </p>
               </div>
 
-              {/* Solution */}
               <div>
-                <h3 className="text-xl font-semibold mb-3">Final Design</h3>
+                <h3 className="text-xl font-semibold mb-3">Successes</h3>
                 <p>
-                  The solution that I found helpful was to make key elements bigger and add as little text as possible. 
+                  A challenge I had, creating this interface, was finding a way of using as much real estate as possible without cluttering the screen and overwhelming the user with information. 
                 </p>
               </div>
             </div>
@@ -245,8 +242,9 @@ export default function Project1() {
           <div>
             <h2 className="text-2xl font-semibold mb-4 text-[#d0d2ff]">Future Directions</h2>
             <p className="mb-4">
-              In the future, I would like to implement this design into a real app that people could use.
-              Before doing this, I would like to do more user testing on the &quot;directions back home&quot; feature to see if it is actually intuitive to the user.
+              In the future, if we had the time, we would like to conduct user testing to gather feedback on the new design and identify areas for improvement.
+              We then could start implementing these real changes into the actual website of the SD Bike Coalition. Also we could start looking at other areas of the homepage such as the
+              event page to create a more user friendly calender and upcoming events design. 
             </p>
           </div>
         </div>
