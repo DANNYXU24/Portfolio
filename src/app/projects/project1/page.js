@@ -151,86 +151,111 @@ export default function Project1() {
               
               {/* Design and Feedback */}
               <div>
-                <h3 className="text-xl font-semibold mb-3">Low-Fidelity</h3>
+                <h3 className="text-xl font-semibold mb-3">Design</h3>
                 <p className="ml-0">
-                  For the initial design, I went with a very simple layout that would allow users to see the bus times but at the same time limit the features
-                  as I did not want to overwhelm the user with information and clutter the interface as it is an inch scale design.
-                  For each bus stop, they would click on the bus stop to see the bus times for that stop.
-                  After the initial design, I would ask for feedback from others and a common theme that I would get was the map was too dominant and the bus times overlay was too small.
-                  This would then lead me to create the second design, which would be more focused on the bus times and less on the map.
-                  After a second round of feedback, I would learn that for an inch scale design, you would want to utilize the space as much as possible, so I would then create the last design.
-                  For my last design, I added a feature on the top of the screen that would essentially give users directions back home, which is a feature that I found very useful
-                  when I was using public transport. Users using this interface would be able to click on any bus stop on the map and see the bus times for that stop, as well as the directions back home.
+      
                 </p>
                 {/* Moved the images under Low-Fidelity description */}
                 <div className="flex flex-col md:flex-row items-center justify-center gap-4 py-8">
-                  {/* First image - reduced size and clickable */}
+                  {/* First image */}
                   <div 
-                    className="w-1/2 md:w-1/6 aspect-square relative mx-auto cursor-pointer overflow-hidden border-3 border-transparent hover:border-[#FFFDD0] shadow hover:shadow-lg transition-all duration-300"
-                    onClick={() => handleImageClick('/images/inchscale1.png')}
+                    className="w-full md:w-2/3 aspect-square relative mx-auto cursor-pointer overflow-hidden border-3 border-transparent hover:border-[#FFFDD0] shadow hover:shadow-lg transition-all duration-300"
+                    onClick={() => handleImageClick('/images/Lofi.png')}
                   >
                     <Image 
-                      src="/images/inchscale1.png" 
-                      alt="Initial design" 
+                      src="/images/Lofi.png" 
+                      alt="Low-Fidelity Design" 
                       fill
                       className="object-contain"
                     />
+                    {/* Overlay with title that appears on hover */}
+                    <div 
+                      className="absolute inset-0 flex items-center justify-center transition-all duration-300"
+                      style={{
+                        background: 'rgba(13, 27, 42, 0)',
+                        opacity: 0
+                      }}
+                      onMouseEnter={(e) => {
+                        e.currentTarget.style.background = 'rgba(13, 27, 42, 0.6)';
+                        e.currentTarget.style.opacity = 1;
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.background = 'rgba(13, 27, 42, 0)';
+                        e.currentTarget.style.opacity = 0;
+                      }}
+                    >
+                      <h3 className="text-sm font-semibold text-white">Low-Fidelity Design</h3>
+                    </div>
                   </div>
                   {/* Arrow */}
                   <div className="flex items-center justify-center text-4xl text-[#FFFDD0] transform rotate-90 md:rotate-0 my-4 md:my-0">
                     →
                   </div>
-                  {/* Second image - reduced size and clickable */}
+                  {/* Second image */}
                   <div 
-                    className="w-1/2 md:w-1/6 aspect-square relative mx-auto cursor-pointer overflow-hidden border-3 border-transparent hover:border-[#FFFDD0] shadow hover:shadow-lg transition-all duration-300"
-                    onClick={() => handleImageClick('/images/inchscale2.png')}
+                    className="w-full md:w-2/3 aspect-square relative mx-auto cursor-pointer overflow-hidden border-3 border-transparent hover:border-[#FFFDD0] shadow hover:shadow-lg transition-all duration-300"
+                    onClick={() => handleImageClick('/images/midfi.png')}
                   >
                     <Image 
-                      src="/images/inchscale2.png" 
-                      alt="Design iteration" 
+                      src="/images/midfi.png" 
+                      alt="Mid-Fidelity Design" 
                       fill
                       className="object-contain"
                     />
+                    {/* Overlay with title that appears on hover */}
+                    <div 
+                      className="absolute inset-0 flex items-center justify-center transition-all duration-300"
+                      style={{
+                        background: 'rgba(13, 27, 42, 0)',
+                        opacity: 0
+                      }}
+                      onMouseEnter={(e) => {
+                        e.currentTarget.style.background = 'rgba(13, 27, 42, 0.6)';
+                        e.currentTarget.style.opacity = 1;
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.background = 'rgba(13, 27, 42, 0)';
+                        e.currentTarget.style.opacity = 0;
+                      }}
+                    >
+                      <h3 className="text-sm font-semibold text-white">Mid-Fidelity Design</h3>
+                    </div>
                   </div>
                   {/* Arrow */}
                   <div className="flex items-center justify-center text-4xl text-[#FFFDD0] transform rotate-90 md:rotate-0 my-4 md:my-0">
                     →
                   </div>
-                  {/* Third image - reduced size and clickable */}
+                  {/* Third image */}
                   <div 
-                    className="w-1/2 md:w-1/6 aspect-square relative mx-auto cursor-pointer overflow-hidden border-3 border-transparent hover:border-[#FFFDD0] shadow hover:shadow-lg transition-all duration-300"
-                    onClick={() => handleImageClick('/images/inchscale3.png')}
+                    className="w-full md:w-2/3 aspect-square relative mx-auto cursor-pointer overflow-hidden border-3 border-transparent hover:border-[#FFFDD0] shadow hover:shadow-lg transition-all duration-300"
+                    onClick={() => handleImageClick('/images/hifi final.png')}
                   >
                     <Image 
-                      src="/images/inchscale3.png" 
-                      alt="Final design" 
+                      src="/images/hifi final.png" 
+                      alt="High-Fidelity Design" 
                       fill
                       className="object-contain"
                     />
+                    {/* Overlay with title that appears on hover */}
+                    <div 
+                      className="absolute inset-0 flex items-center justify-center transition-all duration-300"
+                      style={{
+                        background: 'rgba(13, 27, 42, 0)',
+                        opacity: 0
+                      }}
+                      onMouseEnter={(e) => {
+                        e.currentTarget.style.background = 'rgba(13, 27, 42, 0.6)';
+                        e.currentTarget.style.opacity = 1;
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.background = 'rgba(13, 27, 42, 0)';
+                        e.currentTarget.style.opacity = 0;
+                      }}
+                    >
+                      <h3 className="text-sm font-semibold text-white">High-Fidelity Design</h3>
+                    </div>
                   </div>
                 </div>
-              </div>
-
-              <div>
-                <h3 className="text-xl font-semibold mb-3">High-Fidelity</h3>
-                <p className="ml-0">
-                  After the initial design, I would ask for feedback from others and a common theme that I would get was the map was too dominant and the bus times overlay was too small.
-                </p>
-              </div>
-
-              {/* Challenge */}
-              <div>
-                <h3 className="text-xl font-semibold mb-3">Challenges</h3>
-                <p>
-                  A challenge I had, creating this interface, was finding a way of using as much real estate as possible without cluttering the screen and overwhelming the user with information. 
-                </p>
-              </div>
-
-              <div>
-                <h3 className="text-xl font-semibold mb-3">Successes</h3>
-                <p>
-                  A challenge I had, creating this interface, was finding a way of using as much real estate as possible without cluttering the screen and overwhelming the user with information. 
-                </p>
               </div>
             </div>
           </div>
