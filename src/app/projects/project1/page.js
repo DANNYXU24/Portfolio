@@ -228,10 +228,10 @@ export default function Project1() {
                   {/* Third image */}
                   <div 
                     className="w-full md:w-2/3 aspect-square relative mx-auto cursor-pointer overflow-hidden border-3 border-transparent hover:border-[#FFFDD0] shadow hover:shadow-lg transition-all duration-300"
-                    onClick={() => handleImageClick('/images/hifi final.png')}
+                    onClick={() => handleImageClick('/images/HiFi%20Final.png')}
                   >
                     <Image 
-                      src="/images/hifi final.png" 
+                      src="/images/HiFi%20Final.png" 
                       alt="High-Fidelity Design" 
                       fill
                       className="object-contain"
