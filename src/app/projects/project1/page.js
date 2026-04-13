@@ -90,6 +90,18 @@ export default function Project1() {
                 <Link href="/projects/project3">
                   <div className="p-2 hover:bg-[#28FFE5] hover:text-[#0D1B2A] hover:font-bold transition-all duration-300 cursor-pointer">Project 3</div>
                 </Link>
+                <Link href="/projects/project4">
+                  <div className="p-2 hover:bg-[#28FFE5] hover:text-[#0D1B2A] hover:font-bold transition-all duration-300 cursor-pointer">Gaussian Splat Exploration</div>
+                </Link>
+                <Link href="/projects/project5">
+                  <div className="p-2 hover:bg-[#28FFE5] hover:text-[#0D1B2A] hover:font-bold transition-all duration-300 cursor-pointer">Heart Rate Research</div>
+                </Link>
+                <Link href="/projects/project6">
+                  <div className="p-2 hover:bg-[#28FFE5] hover:text-[#0D1B2A] hover:font-bold transition-all duration-300 cursor-pointer">Cogs 187B</div>
+                </Link>
+                <Link href="/projects/project7">
+                  <div className="p-2 hover:bg-[#28FFE5] hover:text-[#0D1B2A] hover:font-bold transition-all duration-300 cursor-pointer">Adaptive Preference Interface</div>
+                </Link>
               </div>
             )}
           </div>

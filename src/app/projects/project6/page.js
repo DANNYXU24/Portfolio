@@ -2,8 +2,9 @@
 
 import { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
-export default function Resume() {
+export default function Project3() {
   // State to control the visibility of the projects dropdown menu
   const [showProjectsDropdown, setShowProjectsDropdown] = useState(false);
   // Ref for the dropdown container to handle mouse events
@@ -91,7 +92,7 @@ export default function Resume() {
               </div>
             )}
           </div>
-          {/* Resume navigation button - currently active */}
+          {/* Resume navigation button */}
           <Link href="/resume">
             <button className="text-xl font-semibold border-3 border-[#FFFDD0] p-3 hover:bg-[#28FFE5] hover:text-[#0D1B2A] transition-all duration-300">
               Resume
@@ -106,27 +107,10 @@ export default function Resume() {
         </div>
       </div>
       
-      {/* Main content section - make sure this maintains the same spacing as homepage */}
-      <main className="flex flex-col gap-4 items-start w-full">
-        {/* Page title - similar position to "Danny Xu" on homepage */}
-        <h1 className="text-5xl font-semibold mb-6">Resume</h1>
-        
-        {/* Resume content with dashed border */}
-        <div className="bg-[#0D1B2A] custom-dashed-border shadow-md p-6 mb-6 w-full">
-          <div className="mb-4">
-            <p className="text-gray-300">My resume is available below. You can also view it directly in Google Docs <a href="https://docs.google.com/document/d/1T3c--PUtXwK6LSWymN4FDq19s1YI0XYXP0x7KEhZsgk/edit?usp=sharing" target="_blank" rel="noopener noreferrer" className="text-[#28FFE5] hover:underline">here</a>.</p>
-          </div>
-          
-          <div className="w-full h-[800px] overflow-hidden">
-            <iframe 
-              src="https://docs.google.com/document/d/e/2PACX-1vT4PqPqpbyxamUCy2yHM1_nwPhQxIg93yFa_QubRAoE1Up-WzTt8zU0OePSJ3pYvxSmcrX9OOTsjcXq/pub?embedded=true" 
-              className="w-full h-full"
-              frameBorder="0"
-              title="Resume"
-            ></iframe>
-          </div>
-        </div>
-      </main>
+      {/* Project content */}
+      <div className="flex flex-col gap-4 items-start w-full">
+        <h1 className="text-5xl font-semibold">Project 6</h1>
+      </div>
     </div>
   );
 }
