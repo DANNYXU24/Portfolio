@@ -147,7 +147,7 @@ export default function Project3() {
           {/* Findings 3-Column Grid */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {/* Card 1 */}
-            <div className="border-3 border-[#FFFDD0] p-6 hover:border-[#28FFE5] transition-colors duration-300 flex flex-col gap-4">
+            <div className="border-3 border-[#FFFDD0] flex flex-col gap-4">
               <div className="text-[#28FFE5] text-3xl font-bold">01</div>
               <h3 className="text-xl font-bold text-[#FFFDD0]">The &quot;Scattered Data&quot; Crisis</h3>
               <p className="text-gray-300">
@@ -158,9 +158,9 @@ export default function Project3() {
             {/* Card 2 */}
             <div className="border-3 border-[#FFFDD0] p-6 hover:border-[#28FFE5] transition-colors duration-300 flex flex-col gap-4">
               <div className="text-[#28FFE5] text-3xl font-bold">02</div>
-              <h3 className="text-xl font-bold text-[#FFFDD0]">The Unfamiliar Territory Problem</h3>
+              <h3 className="text-xl font-bold text-[#FFFDD0]">The Unfamiliar Environment</h3>
               <p className="text-gray-300">
-                The original app assumed users always knew where they were walking. When navigating new areas, owners felt immense anxiety about local wildlife, off-leash dogs, and crowd levels. A simple &quot;Start Walk&quot; button wasn&apos;t enough; they needed environmental context.
+                The original app assumed users always knew where they were walking. When navigating new areas, owners felt immense anxiety about local wildlife, off-leash dogs, and crowd levels. A simple &quot;Start Walk&quot; button wasn&apos;t enough, they needed environmental context.
               </p>
             </div>
 
