@@ -109,7 +109,7 @@ export default function Project3() {
       
       {/* Project content */}
       <div className="flex flex-col gap-4 items-start w-full">
-        <h1 className="text-5xl font-semibold">Project 3</h1>
+        <h1 className="text-5xl font-semibold">Dogo App Redesign</h1>
       </div>
     </div>
   );
