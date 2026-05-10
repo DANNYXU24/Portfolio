@@ -40,9 +40,12 @@ export default function Project3() {
 
   return (
     // Main container with dark blue background and light text
-    <div className="flex flex-col items-start min-h-screen p-5 space-y-10 w-full bg-[#0D1B2A] text-gray-100">
-      {/* Header section with logo and navigation */}
-      <div className="flex justify-between items-center w-full">
+    <div className="flex flex-col items-start min-h-screen p-5 space-y-10 w-full bg-[#0D1B2A] text-gray-100 font-sans">
+      
+      {/* =========================================
+          HEADER & NAVIGATION 
+      ========================================= */}
+      <div className="flex justify-between items-center w-full mb-8">
         {/* Logo/brand mark with link to homepage */}
         <Link href="/">
           <h2 className="text-xl font-semibold border-3 border-[#FFFDD0] p-3 hover:bg-[#28FFE5] hover:text-[#0D1B2A] transition-all duration-300 cursor-pointer">DX</h2>
@@ -50,67 +53,159 @@ export default function Project3() {
         
         {/* Navigation buttons */}
         <div className="flex gap-4">
-          {/* Projects dropdown with improved hover functionality */}
+          {/* Projects dropdown */}
           <div 
             className="relative" 
             ref={dropdownRef}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           >
-            <button 
-              className="text-xl font-semibold border-3 border-[#FFFDD0] p-3 hover:bg-[#28FFE5] hover:text-[#0D1B2A] transition-all duration-300"
-            >
+            <button className="text-xl font-semibold border-3 border-[#FFFDD0] p-3 hover:bg-[#28FFE5] hover:text-[#0D1B2A] transition-all duration-300">
               Projects
             </button>
-            {/* Dropdown menu with improved hover behavior */}
             {showProjectsDropdown && (
-              <div 
-                className="absolute top-full right-0 mt-1 bg-[#0D1B2A] border-3 border-[#FFFDD0] w-40 z-10"
-              >
-                {/* Project links in dropdown with bold text on hover */}
-                <Link href="/projects/project1">
-                  <div className="p-2 hover:bg-[#28FFE5] hover:text-[#0D1B2A] hover:font-bold transition-all duration-300 cursor-pointer">SD Bike Coalition</div>
-                </Link>
-                <Link href="/projects/project2">
-                  <div className="p-2 hover:bg-[#28FFE5] hover:text-[#0D1B2A] hover:font-bold transition-all duration-300 cursor-pointer">Inch Scale Design</div>
-                </Link>
-                <Link href="/projects/project3">
-                  <div className="p-2 hover:bg-[#28FFE5] hover:text-[#0D1B2A] hover:font-bold transition-all duration-300 cursor-pointer">Project 3</div>
-                </Link>
-                <Link href="/projects/project4">
-                  <div className="p-2 hover:bg-[#28FFE5] hover:text-[#0D1B2A] hover:font-bold transition-all duration-300 cursor-pointer">Gaussian Splat Exploration</div>
-                </Link>
-                <Link href="/projects/project5">
-                  <div className="p-2 hover:bg-[#28FFE5] hover:text-[#0D1B2A] hover:font-bold transition-all duration-300 cursor-pointer">Heart Rate Research</div>
-                </Link>
-                <Link href="/projects/project6">
-                  <div className="p-2 hover:bg-[#28FFE5] hover:text-[#0D1B2A] hover:font-bold transition-all duration-300 cursor-pointer">Cogs 187B</div>
-                </Link>
-                <Link href="/projects/project7">
-                  <div className="p-2 hover:bg-[#28FFE5] hover:text-[#0D1B2A] hover:font-bold transition-all duration-300 cursor-pointer">Adaptive Preference Interface</div>
-                </Link>
+              <div className="absolute top-full right-0 mt-1 bg-[#0D1B2A] border-3 border-[#FFFDD0] w-64 z-20">
+                <Link href="/projects/project1"><div className="p-3 hover:bg-[#28FFE5] hover:text-[#0D1B2A] hover:font-bold transition-all duration-300 cursor-pointer border-b border-[#FFFDD0]/30">SD Bike Coalition</div></Link>
+                <Link href="/projects/project2"><div className="p-3 hover:bg-[#28FFE5] hover:text-[#0D1B2A] hover:font-bold transition-all duration-300 cursor-pointer border-b border-[#FFFDD0]/30">Inch Scale Design</div></Link>
+                <Link href="/projects/project3"><div className="p-3 bg-[#28FFE5] text-[#0D1B2A] font-bold cursor-pointer border-b border-[#FFFDD0]/30">Dogo App Redesign</div></Link>
+                <Link href="/projects/project4"><div className="p-3 hover:bg-[#28FFE5] hover:text-[#0D1B2A] hover:font-bold transition-all duration-300 cursor-pointer border-b border-[#FFFDD0]/30">Gaussian Splat Exploration</div></Link>
+                <Link href="/projects/project5"><div className="p-3 hover:bg-[#28FFE5] hover:text-[#0D1B2A] hover:font-bold transition-all duration-300 cursor-pointer border-b border-[#FFFDD0]/30">Heart Rate Research</div></Link>
+                <Link href="/projects/project6"><div className="p-3 hover:bg-[#28FFE5] hover:text-[#0D1B2A] hover:font-bold transition-all duration-300 cursor-pointer border-b border-[#FFFDD0]/30">Cogs 187B</div></Link>
+                <Link href="/projects/project7"><div className="p-3 hover:bg-[#28FFE5] hover:text-[#0D1B2A] hover:font-bold transition-all duration-300 cursor-pointer">Adaptive Preference Interface</div></Link>
               </div>
             )}
           </div>
-          {/* Resume navigation button */}
           <Link href="/resume">
-            <button className="text-xl font-semibold border-3 border-[#FFFDD0] p-3 hover:bg-[#28FFE5] hover:text-[#0D1B2A] transition-all duration-300">
-              Resume
-            </button>
+            <button className="text-xl font-semibold border-3 border-[#FFFDD0] p-3 hover:bg-[#28FFE5] hover:text-[#0D1B2A] transition-all duration-300">Resume</button>
           </Link>
-          {/* About navigation button */}
           <Link href="/about">
-            <button className="text-xl font-semibold border-3 border-[#FFFDD0] p-3 hover:bg-[#28FFE5] hover:text-[#0D1B2A] transition-all duration-300">
-              About
-            </button>
+            <button className="text-xl font-semibold border-3 border-[#FFFDD0] p-3 hover:bg-[#28FFE5] hover:text-[#0D1B2A] transition-all duration-300">About</button>
           </Link>
         </div>
       </div>
       
-      {/* Project content */}
-      <div className="flex flex-col gap-4 items-start w-full">
-        <h1 className="text-5xl font-semibold">Dogo App Redesign</h1>
-      </div>
+      {/* =========================================
+          HERO SECTION 
+      ========================================= */}
+      <main className="w-full max-w-6xl mx-auto flex flex-col gap-12 pb-20">
+        <div className="flex flex-col items-start w-full gap-6">
+          <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-[#FFFDD0]">Dogo App Redesign</h1>
+          <p className="text-xl md:text-2xl text-gray-300 max-w-3xl">
+            Transforming a basic training tracker into an essential, all-in-one daily companion for dog owners.
+          </p>
+          
+          {/* Metadata Grid */}
+          <div className="flex flex-wrap gap-8 text-sm uppercase tracking-widest mt-4 border-t border-b border-[#FFFDD0]/30 py-4 w-full">
+            <div><span className="font-bold text-[#28FFE5] block mb-1">Role</span> UX/UI Designer</div>
+            <div><span className="font-bold text-[#28FFE5] block mb-1">Timeline</span> [Insert Timeline]</div>
+            <div><span className="font-bold text-[#28FFE5] block mb-1">Tools</span> Figma, React</div>
+            <div><span className="font-bold text-[#28FFE5] block mb-1">Team</span> [Insert Team Info]</div>
+          </div>
+        </div>
+
+        {/* Hero Image Placeholder */}
+        <div className="w-full h-[500px] border-3 border-[#FFFDD0] bg-gray-800 flex items-center justify-center relative overflow-hidden group">
+          {/* Replace this div with your actual next/image component */}
+          <span className="text-xl text-[#FFFDD0]/50 tracking-widest uppercase">Insert High-Fidelity Hero Mockup Here</span>
+        </div>
+
+        {/* =========================================
+            OVERVIEW SECTION 
+        ========================================= */}
+        <section className="grid grid-cols-1 md:grid-cols-12 gap-12 w-full pt-10">
+          {/* Left Column: Narrative */}
+          <div className="md:col-span-7 flex flex-col gap-8 text-lg leading-relaxed text-gray-200">
+            <div>
+              <h2 className="text-3xl font-bold text-[#FFFDD0] mb-4">The TL;DR</h2>
+              <p>
+                Managing a dog’s life shouldn't require juggling five different apps. I helped redesign Dogo to bridge the gap between daily activity tracking and critical health management, transforming it from a simple training tool into an essential, all-in-one companion for pet owners.
+              </p>
+            </div>
+            
+            <div>
+              <h2 className="text-3xl font-bold text-[#FFFDD0] mb-4">The Problem: Disconnected Tools</h2>
+              <p>
+                While daily dog care is generally manageable, the logistics behind the scenes are a mess. Dog owners struggle to access scattered health records, safely navigate unfamiliar walking routes, and track time-sensitive tasks like medications. The reliance on fragmented tools leads to disorganization and unnecessary stress when reliable information is needed most.
+              </p>
+            </div>
+
+            <div>
+              <h2 className="text-3xl font-bold text-[#FFFDD0] mb-4">The Impact</h2>
+              <p>
+                By removing the friction of finding safe walking spots and centralizing medical records, this redesign reduces pet ownership anxiety. For the business, this pivots Dogo from a "use-once-a-week" training app into a trusted, daily-habit ecosystem that supports healthier, more active lifestyles for pets.
+              </p>
+            </div>
+          </div>
+
+          {/* Right Column: Callout Box */}
+          <div className="md:col-span-5 flex flex-col gap-6">
+            <div className="border-3 border-[#28FFE5] p-8 bg-[#0D1B2A] h-fit">
+              <h3 className="text-2xl font-bold italic text-[#28FFE5] leading-snug">
+                "We realized we didn't just need to improve the UI of a walking tracker; we needed to build an ecosystem."
+              </h3>
+            </div>
+            {/* Optional secondary image slot */}
+            <div className="w-full h-[250px] border-3 border-[#FFFDD0] bg-gray-800 flex items-center justify-center">
+               <span className="text-sm text-[#FFFDD0]/50 text-center px-4">Insert Context Image (e.g. Messy paper vet records)</span>
+            </div>
+          </div>
+        </section>
+
+        {/* Divider */}
+        <div className="w-full border-b border-[#FFFDD0]/30 my-8"></div>
+
+        {/* =========================================
+            USER RESEARCH SECTION 
+        ========================================= */}
+        <section className="flex flex-col gap-10 w-full">
+          <div className="max-w-3xl">
+            <h2 className="text-4xl font-bold text-[#FFFDD0] mb-6">User Research & The "Aha" Moments</h2>
+            <p className="text-lg leading-relaxed text-gray-200">
+              As someone who actively manages the daily walking routes and health records for a Siberian Husky/German Shepherd mix, I went into these interviews assuming I understood the baseline struggles of pet care. But talking to other owners revealed that the real friction wasn't in the daily routines—it was in the <span className="italic text-[#28FFE5]">exceptions</span>. 
+              Here is what surprised us the most:
+            </p>
+          </div>
+
+          {/* Findings 3-Column Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {/* Card 1 */}
+            <div className="border-3 border-[#FFFDD0] p-6 hover:border-[#28FFE5] transition-colors duration-300 flex flex-col gap-4">
+              <div className="text-[#28FFE5] text-3xl font-bold">01</div>
+              <h3 className="text-xl font-bold text-[#FFFDD0]">The "Scattered Data" Crisis</h3>
+              <p className="text-gray-300">
+                We expected minor disorganization, but the reality was chaotic. Critical records were buried in camera rolls, lost in emails, or sitting in physical booklets. To recall a deworming date, users were often forced to dig through old bank statements just to find the vet payment.
+              </p>
+            </div>
+
+            {/* Card 2 */}
+            <div className="border-3 border-[#FFFDD0] p-6 hover:border-[#28FFE5] transition-colors duration-300 flex flex-col gap-4">
+              <div className="text-[#28FFE5] text-3xl font-bold">02</div>
+              <h3 className="text-xl font-bold text-[#FFFDD0]">The Unfamiliar Territory Problem</h3>
+              <p className="text-gray-300">
+                The original app assumed users always knew where they were walking. When navigating new areas, owners felt immense anxiety about local wildlife, off-leash dogs, and crowd levels. A simple "Start Walk" button wasn't enough; they needed environmental context.
+              </p>
+            </div>
+
+            {/* Card 3 */}
+            <div className="border-3 border-[#FFFDD0] p-6 hover:border-[#28FFE5] transition-colors duration-300 flex flex-col gap-4">
+              <div className="text-[#28FFE5] text-3xl font-bold">03</div>
+              <h3 className="text-xl font-bold text-[#FFFDD0]">The Trust Deficit</h3>
+              <p className="text-gray-300">
+                There is a glaring lack of trust in existing dog-care services. From safety concerns on Rover to clunky, inaccessible records on the Petco app, users are exhausted by tools that don't prioritize their peace of mind or make vital information easily accessible.
+              </p>
+            </div>
+          </div>
+          
+          {/* The Pivot Statement Banner */}
+          <div className="w-full bg-[#28FFE5] text-[#0D1B2A] p-8 mt-6 border-3 border-[#FFFDD0]">
+            <h3 className="text-2xl md:text-3xl font-bold">The Pivot</h3>
+            <p className="text-lg mt-3 font-medium max-w-4xl">
+              These findings shifted our entire perspective. The users were practically begging for a single source of truth—an app that seamlessly combines walk tracking, automated reminders, and centralized record storage.
+            </p>
+          </div>
+        </section>
+
+      </main>
     </div>
   );
 }
