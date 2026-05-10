@@ -147,7 +147,7 @@ export default function Project3() {
           {/* Findings 3-Column Grid */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {/* Card 1 */}
-            <div className="border-3 border-[#FFFDD0] flex flex-col gap-4">
+            <div className="border-3 border-[#FFFDD0] p-6 flex flex-col gap-4">
               <div className="text-[#28FFE5] text-3xl font-bold">01</div>
               <h3 className="text-xl font-bold text-[#FFFDD0]">The &quot;Scattered Data&quot; Crisis</h3>
               <p className="text-gray-300">
@@ -156,7 +156,7 @@ export default function Project3() {
             </div>
 
             {/* Card 2 */}
-            <div className="border-3 border-[#FFFDD0] p-6 hover:border-[#28FFE5] transition-colors duration-300 flex flex-col gap-4">
+            <div className="border-3 border-[#FFFDD0] p-6 flex flex-col gap-4">
               <div className="text-[#28FFE5] text-3xl font-bold">02</div>
               <h3 className="text-xl font-bold text-[#FFFDD0]">The Unfamiliar Environment</h3>
               <p className="text-gray-300">
@@ -165,7 +165,7 @@ export default function Project3() {
             </div>
 
             {/* Card 3 */}
-            <div className="border-3 border-[#FFFDD0] p-6 hover:border-[#28FFE5] transition-colors duration-300 flex flex-col gap-4">
+            <div className="border-3 border-[#FFFDD0] p-6  flex flex-col gap-4">
               <div className="text-[#28FFE5] text-3xl font-bold">03</div>
               <h3 className="text-xl font-bold text-[#FFFDD0]">The Trust Deficit</h3>
               <p className="text-gray-300">
