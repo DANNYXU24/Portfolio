@@ -90,17 +90,9 @@ export default function Project3() {
       <main className="w-full max-w-6xl mx-auto flex flex-col gap-12 pb-20">
         <div className="flex flex-col items-start w-full gap-6">
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-[#FFFDD0]">Dogo App Redesign</h1>
-          <p className="text-xl md:text-2xl text-gray-300 max-w-3xl">
+          <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mb-4">
             Transforming a basic training tracker into an essential, all-in-one daily companion for dog owners.
           </p>
-          
-          {/* Metadata Grid */}
-          <div className="flex flex-wrap gap-8 text-sm uppercase tracking-widest mt-4 border-t border-b border-[#FFFDD0]/30 py-4 w-full">
-            <div><span className="font-bold text-[#28FFE5] block mb-1">Role</span> UX/UI Designer</div>
-            <div><span className="font-bold text-[#28FFE5] block mb-1">Timeline</span> [Insert Timeline]</div>
-            <div><span className="font-bold text-[#28FFE5] block mb-1">Tools</span> Figma, React</div>
-            <div><span className="font-bold text-[#28FFE5] block mb-1">Team</span> [Insert Team Info]</div>
-          </div>
         </div>
 
         {/* Hero Image Placeholder */}
@@ -116,7 +108,7 @@ export default function Project3() {
           {/* Left Column: Narrative */}
           <div className="md:col-span-7 flex flex-col gap-8 text-lg leading-relaxed text-gray-200">
             <div>
-              <h2 className="text-3xl font-bold text-[#FFFDD0] mb-4">The TL;DR</h2>
+              <h2 className="text-3xl font-bold text-[#FFFDD0] mb-4">Overview</h2>
               <p>
                 Managing a dog&apos;s life shouldn&apos;t require juggling five different apps. I helped redesign Dogo to bridge the gap between daily activity tracking and critical health management, transforming it from a simple training tool into an essential, all-in-one companion for pet owners.
               </p>
@@ -134,19 +126,6 @@ export default function Project3() {
               <p>
                 By removing the friction of finding safe walking spots and centralizing medical records, this redesign reduces pet ownership anxiety. For the business, this pivots Dogo from a &quot;use-once-a-week&quot; training app into a trusted, daily-habit ecosystem that supports healthier, more active lifestyles for pets.
               </p>
-            </div>
-          </div>
-
-          {/* Right Column: Callout Box */}
-          <div className="md:col-span-5 flex flex-col gap-6">
-            <div className="border-3 border-[#28FFE5] p-8 bg-[#0D1B2A] h-fit">
-              <h3 className="text-2xl font-bold italic text-[#28FFE5] leading-snug">
-                &quot;We realized we didn&apos;t just need to improve the UI of a walking tracker; we needed to build an ecosystem.&quot;
-              </h3>
-            </div>
-            {/* Optional secondary image slot */}
-            <div className="w-full h-[250px] border-3 border-[#FFFDD0] bg-gray-800 flex items-center justify-center">
-               <span className="text-sm text-[#FFFDD0]/50 text-center px-4">Insert Context Image (e.g. Messy paper vet records)</span>
             </div>
           </div>
         </section>
