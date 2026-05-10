@@ -104,7 +104,7 @@ export default function Project3() {
 {/* =========================================
             OVERVIEW SECTION 
         ========================================= */}
-        <section className="w-full pt-10 flex justify-center">
+        <section className="w-full pt-10 flex w-full">
           <div className="flex flex-col gap-8 text-lg leading-relaxed text-gray-200 max-w-4xl w-full">
             <div>
               <h2 className="text-3xl font-bold text-[#FFFDD0] mb-4">Overview</h2>
