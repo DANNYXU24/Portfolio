@@ -136,8 +136,8 @@ export default function Project3() {
             USER RESEARCH SECTION 
         ========================================= */}
         <section className="flex flex-col gap-6 w-full">
-          <div className="max-w-3xl">
-            <h2 className="text-4xl font-bold text-[#FFFDD0] mb-2">User Research</h2>
+          <div className="max-w-4xl">
+            <h2 className="text-3xl font-bold text-[#FFFDD0] mb-4">User Research</h2>
             <p className="text-lg leading-relaxed text-gray-200">
               Before conducting user interviews, we assumed the baseline struggles of pet care were centered around managing daily routines like walking and feeding. However, speaking directly with dog owners revealed a completely different reality. The true friction doesn&apos;t exist in the everyday tasks—it lives in the <span className="italic text-[#28FFE5]">exceptions</span>. 
               Here is what surprised us the most:
