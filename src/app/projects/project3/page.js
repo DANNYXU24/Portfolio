@@ -104,24 +104,24 @@ export default function Project3() {
         {/* =========================================
             OVERVIEW SECTION 
         ========================================= */}
-        <section className="w-full flex justify-center">
+        <section className="w-full flex ">
           <div className="flex flex-col gap-6 text-lg leading-relaxed text-gray-200 max-w-4xl w-full">
             <div>
-              <h2 className="text-3xl font-bold text-[#FFFDD0] mb-3">Overview</h2>
+              <h2 className="text-3xl font-bold text-[#FFFDD0] mb-4">Overview</h2>
               <p>
                 Managing a dog&apos;s life shouldn&apos;t require juggling five different apps. I helped redesign Dogo to bridge the gap between daily activity tracking and critical health management, transforming it from a simple training tool into an essential, all-in-one companion for pet owners.
               </p>
             </div>
             
             <div>
-              <h2 className="text-3xl font-bold text-[#FFFDD0] mb-3">The Problem: Disconnected Tools</h2>
+              <h2 className="text-3xl font-bold text-[#FFFDD0] mb-4">The Problem: Disconnected Tools</h2>
               <p>
                 While daily dog care is generally manageable, the logistics behind the scenes are a mess. Dog owners struggle to access scattered health records, safely navigate unfamiliar walking routes, and track time-sensitive tasks like medications. The reliance on fragmented tools leads to disorganization and unnecessary stress when reliable information is needed most.
               </p>
             </div>
 
             <div>
-              <h2 className="text-3xl font-bold text-[#FFFDD0] mb-3">The Impact</h2>
+              <h2 className="text-3xl font-bold text-[#FFFDD0] mb-4">The Impact</h2>
               <p>
                 By removing the friction of finding safe walking spots and centralizing medical records, this redesign reduces pet ownership anxiety. For the business, this pivots Dogo from a &quot;use-once-a-week&quot; training app into a trusted, daily-habit ecosystem that supports healthier, more active lifestyles for pets.
               </p>
@@ -137,10 +137,10 @@ export default function Project3() {
         {/* =========================================
             USER RESEARCH SECTION 
         ========================================= */}
-        <section className="w-full flex justify-center">
+        <section className="w-full flex ">
           <div className="flex flex-col gap-8 max-w-4xl w-full">
             <div>
-              <h2 className="text-3xl font-bold text-[#FFFDD0] mb-3">User Research</h2>
+              <h2 className="text-3xl font-bold text-[#FFFDD0] mb-4">User Research</h2>
               <p className="text-lg leading-relaxed text-gray-200">
                 Before conducting user interviews, we assumed the baseline struggles of pet care were centered around managing daily routines like walking and feeding. However, speaking directly with dog owners revealed a completely different reality. The true friction doesn&apos;t exist in the everyday tasks—it lives in the <span className="italic text-[#28FFE5]">exceptions</span>. 
                 Here is what surprised us the most:
