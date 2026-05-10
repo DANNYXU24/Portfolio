@@ -139,7 +139,7 @@ export default function Project3() {
           <div className="max-w-3xl">
             <h2 className="text-4xl font-bold text-[#FFFDD0] mb-4">User Research</h2>
             <p className="text-lg leading-relaxed text-gray-200">
-              As someone who actively manages the daily walking routes and health records for a Siberian Husky/German Shepherd mix, I went into these interviews assuming I understood the baseline struggles of pet care. But talking to other owners revealed that the real friction wasn&apos;t in the daily routines—it was in the <span className="italic text-[#28FFE5]">exceptions</span>. 
+              Before conducting user interviews, we assumed the baseline struggles of pet care were centered around managing daily routines like walking and feeding. However, speaking directly with dog owners revealed a completely different reality. The true friction doesn&apos;t exist in the everyday tasks—it lives in the <span className="italic text-[#28FFE5]">exceptions</span>. 
               Here is what surprised us the most:
             </p>
           </div>
