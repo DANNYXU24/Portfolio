@@ -40,12 +40,12 @@ export default function Project3() {
 
   return (
     // Main container with dark blue background and light text
-    <div className="flex flex-col items-start min-h-screen p-5 space-y-10 w-full bg-[#0D1B2A] text-gray-100 font-sans">
+    <div className="flex flex-col items-start min-h-screen p-5 space-y-6 w-full bg-[#0D1B2A] text-gray-100 font-sans">
       
       {/* =========================================
           HEADER & NAVIGATION 
       ========================================= */}
-      <div className="flex justify-between items-center w-full mb-8">
+      <div className="flex justify-between items-center w-full mb-4">
         {/* Logo/brand mark with link to homepage */}
         <Link href="/">
           <h2 className="text-xl font-semibold border-3 border-[#FFFDD0] p-3 hover:bg-[#28FFE5] hover:text-[#0D1B2A] transition-all duration-300 cursor-pointer">DX</h2>
@@ -87,7 +87,7 @@ export default function Project3() {
       {/* =========================================
           HERO SECTION 
       ========================================= */}
-      <main className="w-full max-w-6xl mx-auto flex flex-col gap-8 pb-10">
+      <main className="w-full max-w-6xl mx-auto flex flex-col gap-6 pb-10">
         <div className="flex flex-col items-start w-full gap-4">
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-[#FFFDD0]">Dogo App Redesign</h1>
           <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mb-2">
@@ -104,24 +104,24 @@ export default function Project3() {
         {/* =========================================
             OVERVIEW SECTION 
         ========================================= */}
-        <section className="w-full flex ">
-          <div className="flex flex-col gap-6 text-lg leading-relaxed text-gray-200 max-w-4xl w-full">
+        <section className="w-full pt-4 flex w-full">
+          <div className="flex flex-col gap-4 text-lg leading-relaxed text-gray-200 max-w-4xl w-full">
             <div>
-              <h2 className="text-3xl font-bold text-[#FFFDD0] mb-4">Overview</h2>
+              <h2 className="text-3xl font-bold text-[#FFFDD0] mb-2">Overview</h2>
               <p>
                 Managing a dog&apos;s life shouldn&apos;t require juggling five different apps. I helped redesign Dogo to bridge the gap between daily activity tracking and critical health management, transforming it from a simple training tool into an essential, all-in-one companion for pet owners.
               </p>
             </div>
             
             <div>
-              <h2 className="text-3xl font-bold text-[#FFFDD0] mb-4">The Problem: Disconnected Tools</h2>
+              <h2 className="text-3xl font-bold text-[#FFFDD0] mb-2">The Problem: Disconnected Tools</h2>
               <p>
                 While daily dog care is generally manageable, the logistics behind the scenes are a mess. Dog owners struggle to access scattered health records, safely navigate unfamiliar walking routes, and track time-sensitive tasks like medications. The reliance on fragmented tools leads to disorganization and unnecessary stress when reliable information is needed most.
               </p>
             </div>
 
             <div>
-              <h2 className="text-3xl font-bold text-[#FFFDD0] mb-4">The Impact</h2>
+              <h2 className="text-3xl font-bold text-[#FFFDD0] mb-2">The Impact</h2>
               <p>
                 By removing the friction of finding safe walking spots and centralizing medical records, this redesign reduces pet ownership anxiety. For the business, this pivots Dogo from a &quot;use-once-a-week&quot; training app into a trusted, daily-habit ecosystem that supports healthier, more active lifestyles for pets.
               </p>
@@ -130,51 +130,47 @@ export default function Project3() {
         </section>
 
         {/* Divider */}
-        <div className="w-full flex justify-center my-4">
-          <div className="w-full max-w-4xl border-b border-[#FFFDD0]/30"></div>
-        </div>
+        <div className="w-full border-b border-[#FFFDD0]/30 my-4"></div>
 
         {/* =========================================
             USER RESEARCH SECTION 
         ========================================= */}
-        <section className="w-full flex ">
-          <div className="flex flex-col gap-8 max-w-4xl w-full">
-            <div>
-              <h2 className="text-3xl font-bold text-[#FFFDD0] mb-4">User Research</h2>
-              <p className="text-lg leading-relaxed text-gray-200">
-                Before conducting user interviews, we assumed the baseline struggles of pet care were centered around managing daily routines like walking and feeding. However, speaking directly with dog owners revealed a completely different reality. The true friction doesn&apos;t exist in the everyday tasks—it lives in the <span className="italic text-[#28FFE5]">exceptions</span>. 
-                Here is what surprised us the most:
+        <section className="flex flex-col gap-6 w-full">
+          <div className="max-w-3xl">
+            <h2 className="text-4xl font-bold text-[#FFFDD0] mb-4">User Research</h2>
+            <p className="text-lg leading-relaxed text-gray-200">
+              Before conducting user interviews, we assumed the baseline struggles of pet care were centered around managing daily routines like walking and feeding. However, speaking directly with dog owners revealed a completely different reality. The true friction doesn&apos;t exist in the everyday tasks—it lives in the <span className="italic text-[#28FFE5]">exceptions</span>. 
+              Here is what surprised us the most:
+            </p>
+          </div>
+
+          {/* Findings 3-Column Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {/* Card 1 */}
+            <div className="border-3 border-[#FFFDD0] p-6 flex flex-col gap-4">
+              <div className="text-[#28FFE5] text-3xl font-bold">01</div>
+              <h3 className="text-xl font-bold text-[#FFFDD0]">The &quot;Scattered Data&quot; Crisis</h3>
+              <p className="text-gray-300">
+                We expected minor disorganization, but the reality was chaotic. Critical records were buried in camera rolls, lost in emails, or sitting in physical booklets. To recall a deworming date, users were often forced to dig through old bank statements just to find the vet payment.
               </p>
             </div>
 
-            {/* Findings 3-Column Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {/* Card 1 */}
-              <div className="border-3 border-[#FFFDD0] p-6 flex flex-col gap-4">
-                <div className="text-[#28FFE5] text-3xl font-bold">01</div>
-                <h3 className="text-xl font-bold text-[#FFFDD0]">The &quot;Scattered Data&quot; Crisis</h3>
-                <p className="text-gray-300">
-                  We expected minor disorganization, but the reality was chaotic. Critical records were buried in camera rolls, lost in emails, or sitting in physical booklets. To recall a deworming date, users were often forced to dig through old bank statements just to find the vet payment.
-                </p>
-              </div>
+            {/* Card 2 */}
+            <div className="border-3 border-[#FFFDD0] p-6 flex flex-col gap-4">
+              <div className="text-[#28FFE5] text-3xl font-bold">02</div>
+              <h3 className="text-xl font-bold text-[#FFFDD0]">The Unfamiliar Environment</h3>
+              <p className="text-gray-300">
+                The original app assumed users always knew where they were walking. When navigating new areas, owners felt immense anxiety about local wildlife, off-leash dogs, and crowd levels. A simple &quot;Start Walk&quot; button wasn&apos;t enough, they needed environmental context.
+              </p>
+            </div>
 
-              {/* Card 2 */}
-              <div className="border-3 border-[#FFFDD0] p-6 flex flex-col gap-4">
-                <div className="text-[#28FFE5] text-3xl font-bold">02</div>
-                <h3 className="text-xl font-bold text-[#FFFDD0]">The Unfamiliar Environment</h3>
-                <p className="text-gray-300">
-                  The original app assumed users always knew where they were walking. When navigating new areas, owners felt immense anxiety about local wildlife, off-leash dogs, and crowd levels. A simple &quot;Start Walk&quot; button wasn&apos;t enough, they needed environmental context.
-                </p>
-              </div>
-
-              {/* Card 3 */}
-              <div className="border-3 border-[#FFFDD0] p-6 flex flex-col gap-4">
-                <div className="text-[#28FFE5] text-3xl font-bold">03</div>
-                <h3 className="text-xl font-bold text-[#FFFDD0]">The Trust Deficit</h3>
-                <p className="text-gray-300">
-                  There is a glaring lack of trust in existing dog-care services. From safety concerns on Rover to clunky, inaccessible records on the Petco app, users are exhausted by tools that don&apos;t prioritize their peace of mind or make vital information easily accessible.
-                </p>
-              </div>
+            {/* Card 3 */}
+            <div className="border-3 border-[#FFFDD0] p-6  flex flex-col gap-4">
+              <div className="text-[#28FFE5] text-3xl font-bold">03</div>
+              <h3 className="text-xl font-bold text-[#FFFDD0]">The Trust Deficit</h3>
+              <p className="text-gray-300">
+                There is a glaring lack of trust in existing dog-care services. From safety concerns on Rover to clunky, inaccessible records on the Petco app, users are exhausted by tools that don&apos;t prioritize their peace of mind or make vital information easily accessible.
+              </p>
             </div>
           </div>
         </section>
