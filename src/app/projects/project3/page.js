@@ -118,7 +118,7 @@ export default function Project3() {
             <div>
               <h2 className="text-3xl font-bold text-[#FFFDD0] mb-4">The TL;DR</h2>
               <p>
-                Managing a dog’s life shouldn't require juggling five different apps. I helped redesign Dogo to bridge the gap between daily activity tracking and critical health management, transforming it from a simple training tool into an essential, all-in-one companion for pet owners.
+                Managing a dog&apos;s life shouldn&apos;t require juggling five different apps. I helped redesign Dogo to bridge the gap between daily activity tracking and critical health management, transforming it from a simple training tool into an essential, all-in-one companion for pet owners.
               </p>
             </div>
             
@@ -132,7 +132,7 @@ export default function Project3() {
             <div>
               <h2 className="text-3xl font-bold text-[#FFFDD0] mb-4">The Impact</h2>
               <p>
-                By removing the friction of finding safe walking spots and centralizing medical records, this redesign reduces pet ownership anxiety. For the business, this pivots Dogo from a "use-once-a-week" training app into a trusted, daily-habit ecosystem that supports healthier, more active lifestyles for pets.
+                By removing the friction of finding safe walking spots and centralizing medical records, this redesign reduces pet ownership anxiety. For the business, this pivots Dogo from a &quot;use-once-a-week&quot; training app into a trusted, daily-habit ecosystem that supports healthier, more active lifestyles for pets.
               </p>
             </div>
           </div>
@@ -141,7 +141,7 @@ export default function Project3() {
           <div className="md:col-span-5 flex flex-col gap-6">
             <div className="border-3 border-[#28FFE5] p-8 bg-[#0D1B2A] h-fit">
               <h3 className="text-2xl font-bold italic text-[#28FFE5] leading-snug">
-                "We realized we didn't just need to improve the UI of a walking tracker; we needed to build an ecosystem."
+                &quot;We realized we didn&apos;t just need to improve the UI of a walking tracker; we needed to build an ecosystem.&quot;
               </h3>
             </div>
             {/* Optional secondary image slot */}
@@ -159,9 +159,9 @@ export default function Project3() {
         ========================================= */}
         <section className="flex flex-col gap-10 w-full">
           <div className="max-w-3xl">
-            <h2 className="text-4xl font-bold text-[#FFFDD0] mb-6">User Research & The "Aha" Moments</h2>
+            <h2 className="text-4xl font-bold text-[#FFFDD0] mb-6">User Research &amp; The &quot;Aha&quot; Moments</h2>
             <p className="text-lg leading-relaxed text-gray-200">
-              As someone who actively manages the daily walking routes and health records for a Siberian Husky/German Shepherd mix, I went into these interviews assuming I understood the baseline struggles of pet care. But talking to other owners revealed that the real friction wasn't in the daily routines—it was in the <span className="italic text-[#28FFE5]">exceptions</span>. 
+              As someone who actively manages the daily walking routes and health records for a Siberian Husky/German Shepherd mix, I went into these interviews assuming I understood the baseline struggles of pet care. But talking to other owners revealed that the real friction wasn&apos;t in the daily routines—it was in the <span className="italic text-[#28FFE5]">exceptions</span>. 
               Here is what surprised us the most:
             </p>
           </div>
@@ -171,7 +171,7 @@ export default function Project3() {
             {/* Card 1 */}
             <div className="border-3 border-[#FFFDD0] p-6 hover:border-[#28FFE5] transition-colors duration-300 flex flex-col gap-4">
               <div className="text-[#28FFE5] text-3xl font-bold">01</div>
-              <h3 className="text-xl font-bold text-[#FFFDD0]">The "Scattered Data" Crisis</h3>
+              <h3 className="text-xl font-bold text-[#FFFDD0]">The &quot;Scattered Data&quot; Crisis</h3>
               <p className="text-gray-300">
                 We expected minor disorganization, but the reality was chaotic. Critical records were buried in camera rolls, lost in emails, or sitting in physical booklets. To recall a deworming date, users were often forced to dig through old bank statements just to find the vet payment.
               </p>
@@ -182,7 +182,7 @@ export default function Project3() {
               <div className="text-[#28FFE5] text-3xl font-bold">02</div>
               <h3 className="text-xl font-bold text-[#FFFDD0]">The Unfamiliar Territory Problem</h3>
               <p className="text-gray-300">
-                The original app assumed users always knew where they were walking. When navigating new areas, owners felt immense anxiety about local wildlife, off-leash dogs, and crowd levels. A simple "Start Walk" button wasn't enough; they needed environmental context.
+                The original app assumed users always knew where they were walking. When navigating new areas, owners felt immense anxiety about local wildlife, off-leash dogs, and crowd levels. A simple &quot;Start Walk&quot; button wasn&apos;t enough; they needed environmental context.
               </p>
             </div>
 
@@ -191,7 +191,7 @@ export default function Project3() {
               <div className="text-[#28FFE5] text-3xl font-bold">03</div>
               <h3 className="text-xl font-bold text-[#FFFDD0]">The Trust Deficit</h3>
               <p className="text-gray-300">
-                There is a glaring lack of trust in existing dog-care services. From safety concerns on Rover to clunky, inaccessible records on the Petco app, users are exhausted by tools that don't prioritize their peace of mind or make vital information easily accessible.
+                There is a glaring lack of trust in existing dog-care services. From safety concerns on Rover to clunky, inaccessible records on the Petco app, users are exhausted by tools that don&apos;t prioritize their peace of mind or make vital information easily accessible.
               </p>
             </div>
           </div>
