@@ -101,12 +101,11 @@ export default function Project3() {
           <span className="text-xl text-[#FFFDD0]/50 tracking-widest uppercase">Insert High-Fidelity Hero Mockup Here</span>
         </div>
 
-        {/* =========================================
+{/* =========================================
             OVERVIEW SECTION 
         ========================================= */}
-        <section className="grid grid-cols-1 md:grid-cols-12 gap-12 w-full pt-10">
-          {/* Left Column: Narrative */}
-          <div className="md:col-span-7 flex flex-col gap-8 text-lg leading-relaxed text-gray-200">
+        <section className="w-full pt-10 flex justify-center">
+          <div className="flex flex-col gap-8 text-lg leading-relaxed text-gray-200 max-w-4xl w-full">
             <div>
               <h2 className="text-3xl font-bold text-[#FFFDD0] mb-4">Overview</h2>
               <p>
