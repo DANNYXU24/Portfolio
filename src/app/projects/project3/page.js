@@ -137,7 +137,7 @@ export default function Project3() {
         ========================================= */}
         <section className="flex flex-col gap-10 w-full">
           <div className="max-w-3xl">
-            <h2 className="text-4xl font-bold text-[#FFFDD0] mb-6">User Research &amp; The &quot;Aha&quot; Moments</h2>
+            <h2 className="text-4xl font-bold text-[#FFFDD0] mb-4">User Research</h2>
             <p className="text-lg leading-relaxed text-gray-200">
               As someone who actively manages the daily walking routes and health records for a Siberian Husky/German Shepherd mix, I went into these interviews assuming I understood the baseline struggles of pet care. But talking to other owners revealed that the real friction wasn&apos;t in the daily routines—it was in the <span className="italic text-[#28FFE5]">exceptions</span>. 
               Here is what surprised us the most:
@@ -172,14 +172,6 @@ export default function Project3() {
                 There is a glaring lack of trust in existing dog-care services. From safety concerns on Rover to clunky, inaccessible records on the Petco app, users are exhausted by tools that don&apos;t prioritize their peace of mind or make vital information easily accessible.
               </p>
             </div>
-          </div>
-          
-          {/* The Pivot Statement Banner */}
-          <div className="w-full bg-[#28FFE5] text-[#0D1B2A] p-8 mt-6 border-3 border-[#FFFDD0]">
-            <h3 className="text-2xl md:text-3xl font-bold">The Pivot</h3>
-            <p className="text-lg mt-3 font-medium max-w-4xl">
-              These findings shifted our entire perspective. The users were practically begging for a single source of truth—an app that seamlessly combines walk tracking, automated reminders, and centralized record storage.
-            </p>
           </div>
         </section>
 
