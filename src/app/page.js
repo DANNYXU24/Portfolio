@@ -242,7 +242,7 @@ export default function Home() {
               <li className="aspect-square border-3 border-transparent hover:border-[#FFFDD0] shadow hover:shadow-lg transition-all duration-300 cursor-pointer relative overflow-hidden">
                 {/* Project image */}
                 <Image 
-                  src="/images/project3.jpg" 
+                  src="/images/dogo.png" 
                   alt="Project 3" 
                   fill
                   className="object-cover"
