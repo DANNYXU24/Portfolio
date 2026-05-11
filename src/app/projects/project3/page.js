@@ -149,7 +149,7 @@ export default function Project3() {
             {/* Card 1 */}
             <div className="border-3 border-[#FFFDD0] p-6 flex flex-col gap-4">
               <div className="text-[#28FFE5] text-3xl font-bold">01</div>
-              <h3 className="text-xl font-bold text-[#FFFDD0]">The &quot;Scattered Data&quot; Crisis</h3>
+              <h3 className="text-xl font-bold text-[#FFFDD0]">The Scattered Information</h3>
               <p className="text-gray-300">
                 We expected minor disorganization, but in reality it was chaotic. Important records were buried in camera rolls, lost in emails, or sitting in physical notes. 
               </p>
@@ -167,7 +167,7 @@ export default function Project3() {
             {/* Card 3 */}
             <div className="border-3 border-[#FFFDD0] p-6  flex flex-col gap-4">
               <div className="text-[#28FFE5] text-3xl font-bold">03</div>
-              <h3 className="text-xl font-bold text-[#FFFDD0]">The Trust Deficit</h3>
+              <h3 className="text-xl font-bold text-[#FFFDD0]">The Trust Concern</h3>
               <p className="text-gray-300">
                 There is a glaring lack of trust in existing dog-care services. From safety concerns on Rover, users don&apos;t trust tools that don&apos;t prioritize their peace of mind or dog&apos;s safety. 
               </p>
