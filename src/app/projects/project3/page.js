@@ -46,7 +46,7 @@ export default function Project3() {
 
   // Intersection Observer for scroll spy
   useEffect(() => {
-    const sectionIds = ['overview', 'research', 'design'];
+    const sectionIds = ['overview', 'research', 'testing', 'design'];
     const sections = sectionIds.map(id => document.getElementById(id)).filter(Boolean);
 
     const observerOptions = {
@@ -124,6 +124,7 @@ export default function Project3() {
         <ul className="flex flex-col gap-4 text-sm text-gray-400">
           <li><a href="#overview" className={`transition-colors duration-300 inline-block transform ${activeSection === 'overview' ? 'text-[#28FFE5] font-bold translate-x-2' : 'hover:text-[#28FFE5] hover:translate-x-1'}`}>Overview</a></li>
           <li><a href="#research" className={`transition-colors duration-300 inline-block transform ${activeSection === 'research' ? 'text-[#28FFE5] font-bold translate-x-2' : 'hover:text-[#28FFE5] hover:translate-x-1'}`}>User Research</a></li>
+          <li><a href="#testing" className={`transition-colors duration-300 inline-block transform ${activeSection === 'testing' ? 'text-[#28FFE5] font-bold translate-x-2' : 'hover:text-[#28FFE5] hover:translate-x-1'}`}>Testing & Iteration</a></li>
           <li><a href="#design" className={`transition-colors duration-300 inline-block transform ${activeSection === 'design' ? 'text-[#28FFE5] font-bold translate-x-2' : 'hover:text-[#28FFE5] hover:translate-x-1'}`}>Designing the Solution</a></li>
         </ul>
       </aside>
@@ -212,6 +213,173 @@ export default function Project3() {
               <p className="text-gray-300">
                 There is a glaring lack of trust in existing dog-care services. From safety concerns on Rover, users don&apos;t trust tools that don&apos;t prioritize their peace of mind or dog&apos;s safety.
               </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Divider */}
+        <div className="w-full border-b border-[#FFFDD0]/30 my-4"></div>
+
+        {/* =========================================
+            USER TESTING & ITERATION SECTION 
+        ========================================= */}
+        <section id="testing" className="flex flex-col gap-6 w-full scroll-mt-20">
+          <div className="max-w-4xl">
+            <h2 className="text-3xl font-bold text-[#FFFDD0] mb-4">User Testing &amp; Iteration</h2>
+            <p className="text-lg leading-relaxed text-gray-200 mb-6">
+              To validate whether our redesigned flows actually solved the pain points we uncovered during research, we conducted moderated usability tests with two dog owners who matched our target audience&mdash;busy students managing pet care on top of their daily lives.
+            </p>
+          </div>
+
+          {/* Participants */}
+          <div className="max-w-4xl">
+            <h3 className="text-2xl font-bold text-[#28FFE5] mb-3">Participants</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="border-3 border-[#FFFDD0] p-6 flex flex-col gap-4">
+                <span className="text-[#28FFE5] text-sm font-bold uppercase tracking-wider">P1</span>
+                <p className="text-gray-200">A college student with a dog who currently tracks all pet information in phone notes&mdash;scattered across dozens of entries with no structure or quick-access system.</p>
+              </div>
+              <div className="border-3 border-[#FFFDD0] p-6 flex flex-col gap-4">
+                <span className="text-[#28FFE5] text-sm font-bold uppercase tracking-wider">P2</span>
+                <p className="text-gray-200">A UCSD student with a dog who relies on a paper vaccination record but often loses it&mdash;leading to frantic searches before vet visits and doggy daycare drop-offs.</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Methodology */}
+          <div className="max-w-4xl mt-2">
+            <h3 className="text-2xl font-bold text-[#28FFE5] mb-3">Methodology</h3>
+            <p className="text-lg leading-relaxed text-gray-200 mb-4">
+              Each session started by gathering first impressions of our prototype&apos;s layout and visual hierarchy. We then asked participants to complete two tasks that mapped directly to the core pain points from our research:
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="border-3 border-[#FFFDD0] p-6 flex flex-col gap-4">
+                <span className="text-[#28FFE5] text-lg font-bold">Task 1</span>
+                <p className="text-gray-300">Find a dog park using the redesigned walk discovery flow.</p>
+              </div>
+              <div className="border-3 border-[#FFFDD0] p-6 flex flex-col gap-4">
+                <span className="text-[#28FFE5] text-lg font-bold">Task 2</span>
+                <p className="text-gray-300">Find their dog&apos;s rabies vaccination record using the new profile health hub.</p>
+              </div>
+            </div>
+          </div>
+
+
+          {/* Point of View */}
+          <div className="max-w-4xl mt-2">
+            <h3 className="text-2xl font-bold text-[#28FFE5] mb-2">Point of View</h3>
+            <p className="text-lg leading-relaxed text-gray-200">
+              Users seemed to have good feedback on our App extension and redesign. However, we also believed the vaccination record path had a hidden usability issue. Users said it was easy,
+              but their pause and the &ldquo;complicated&rdquo; comment suggested the current path (Profile &rarr; Documents &rarr; Vaccination) was not intuitive. Users needed a way to easily access the vaccination
+              records in the profile main page. Users also seemed to have difficulty locating the trail and would like to see the actual walk on the map when they on the walk card screen.
+            </p>
+          </div>
+
+          {/* Before & After Stories */}
+          <div className="flex flex-col gap-8 mt-6">
+            <h3 className="text-2xl font-bold text-[#FFFDD0]">Before & After Stories</h3>
+
+            {/* Story 1 */}
+            <div className="border-3 border-[#FFFDD0]/50 p-6 flex flex-col gap-6">
+              <h4 className="text-xl font-bold text-[#28FFE5]">Story 1: [Placeholder Screen Name]</h4>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center justify-items-center">
+                <div className="w-full max-w-[260px] h-[550px] bg-[#0D1B2A] flex flex-col items-center justify-center border-3 border-gray-600 border-dashed rounded-xl relative">
+                  {/* Replace with actual image: <Image src="..." alt="Before" fill className="object-contain" /> */}
+                  <span className="text-gray-400 font-bold uppercase tracking-wider">Before</span>
+                </div>
+                <div className="w-full max-w-[260px] h-[550px] bg-[#0D1B2A] flex flex-col items-center justify-center border-3 border-[#FFFDD0] rounded-xl relative">
+                  {/* Replace with actual image: <Image src="..." alt="After" fill className="object-contain" /> */}
+                  <span className="text-[#FFFDD0]/50 font-bold uppercase tracking-wider">After</span>
+                </div>
+              </div>
+              <div className="flex flex-col gap-2 mt-4">
+                <h5 className="font-bold text-[#FFFDD0] text-lg">What Changed & Why:</h5>
+                <p className="text-gray-300 leading-relaxed">
+                  [Placeholder Text: Annotate the screens and explain exactly what changed. Justify how these changes fit into the overall goals of the product and what value this provides to users or the app&apos;s overall impact.]
+                </p>
+              </div>
+            </div>
+
+            {/* Story 2 */}
+            <div className="border-3 border-[#FFFDD0]/50 p-6 flex flex-col gap-8">
+              <h4 className="text-xl font-bold text-[#28FFE5]">Story 2: Walk Card</h4>
+              
+              <div className="flex flex-col xl:flex-row gap-8 items-center xl:items-start justify-center relative w-full pt-4">
+                
+                {/* Left Side: Before Annotations */}
+                <div className="hidden xl:block relative z-10 w-[200px] shrink-0 h-[550px]">
+                  <div className="absolute top-[6%] right-0 bg-[#0D1B2A]/90 py-2 px-3 rounded border border-[#FF4C4C]/80 shadow-md text-right max-w-fit">
+                    <p className="text-[#FFFDD0] text-sm font-semibold leading-tight">Hard to locate on map</p>
+                    <svg width="120" height="40" className="absolute top-1/2 left-full overflow-visible -translate-y-1/2">
+                      <line x1="0" y1="20" x2="110" y2="20" stroke="#FF4C4C" strokeWidth="3" style={{ filter: 'drop-shadow(0px 1px 2px rgba(0,0,0,0.8))' }} />
+                    </svg>
+                  </div>
+                  
+                  <div className="absolute top-[40%] right-0 bg-[#0D1B2A]/90 py-2 px-3 rounded border border-[#FF4C4C]/80 shadow-md text-right max-w-fit">
+                    <p className="text-[#FFFDD0] text-sm font-semibold leading-tight">What is the trail actually?</p>
+                    <svg width="60" height="20" className="absolute top-1/2 left-full overflow-visible -translate-y-1/2">
+                      <line x1="0" y1="10" x2="50" y2="10" stroke="#FF4C4C" strokeWidth="3" style={{ filter: 'drop-shadow(0px 1px 2px rgba(0,0,0,0.8))' }} />
+                    </svg>
+                  </div>
+                </div>
+
+                {/* Before Image */}
+                <div className="relative flex flex-col items-center">
+                  <div onClick={() => setLightboxSrc('/project3/Walk Card.png')} className="cursor-pointer group w-full max-w-[260px]">
+                    <div className="bg-[#1B2838] rounded-[2rem] p-2 sm:p-3 shadow-lg shadow-black/40 transition-transform duration-300 group-hover:scale-[1.03]">
+                      <Image src="/project3/Walk Card.png" alt="Before Walk Card" width={400} height={860} className="w-full h-auto rounded-[1.4rem] bg-white object-contain" />
+                    </div>
+                  </div>
+                  <span className="text-gray-400 font-bold uppercase tracking-wider mt-4">Before</span>
+                </div>
+
+                {/* Middle: After Annotations */}
+                <div className="hidden xl:block relative z-10 w-[240px] shrink-0 h-[550px]">
+                  <div className="absolute top-[4%] right-0 bg-[#0D1B2A]/90 p-3 rounded border border-[#28FFE5]/50 shadow-md w-full">
+                    <p className="text-[#28FFE5] text-sm font-semibold leading-tight">Added more realistic times/distance and changed the distance scale for users to easily imagine</p>
+                    <svg width="100" height="90" className="absolute top-[25%] left-full overflow-visible">
+                      <line x1="0" y1="0" x2="90" y2="80" stroke="#28FFE5" strokeWidth="3" style={{ filter: 'drop-shadow(0px 1px 2px rgba(0,0,0,0.8))' }} />
+                    </svg>
+                  </div>
+                  
+                  <div className="absolute top-[24%] right-0 bg-[#0D1B2A]/90 p-3 rounded border border-[#28FFE5]/50 shadow-md w-full">
+                    <p className="text-[#28FFE5] text-sm font-semibold leading-tight">Added &quot;star rating&quot; so users can see what they personally rated the walk</p>
+                    <svg width="80" height="30" className="absolute top-1/2 left-full overflow-visible -translate-y-1/2">
+                      <line x1="0" y1="20" x2="70" y2="10" stroke="#28FFE5" strokeWidth="3" style={{ filter: 'drop-shadow(0px 1px 2px rgba(0,0,0,0.8))' }} />
+                    </svg>
+                  </div>
+
+                  <div className="absolute top-[48%] right-0 bg-[#0D1B2A]/90 p-3 rounded border border-[#28FFE5]/50 shadow-md w-[90%]">
+                    <p className="text-[#28FFE5] text-sm font-semibold leading-tight">Added map and trail markers to aid users</p>
+                    <svg width="70" height="20" className="absolute top-1/2 left-full overflow-visible -translate-y-1/2">
+                      <line x1="0" y1="10" x2="60" y2="10" stroke="#28FFE5" strokeWidth="3" style={{ filter: 'drop-shadow(0px 1px 2px rgba(0,0,0,0.8))' }} />
+                    </svg>
+                  </div>
+                </div>
+
+                {/* Right Side: After Image */}
+                <div className="relative flex flex-col items-center">
+                  <div onClick={() => setLightboxSrc('/project3/New Walk Card.png')} className="cursor-pointer group w-full max-w-[260px]">
+                    <div className="bg-[#1B2838] rounded-[2rem] p-2 sm:p-3 shadow-lg shadow-black/40 transition-transform duration-300 group-hover:scale-[1.03]">
+                      <Image src="/project3/New Walk Card.png" alt="After Walk Card" width={400} height={860} className="w-full h-auto rounded-[1.4rem] bg-white object-contain" />
+                    </div>
+                  </div>
+                  <span className="text-[#FFFDD0] font-bold uppercase tracking-wider mt-4">After</span>
+                </div>
+              </div>
+
+              {/* Mobile Fallback for Annotations */}
+              <div className="xl:hidden flex flex-col gap-4 mt-6 text-sm bg-[#1B2838]/50 p-4 rounded-xl border border-[#FFFDD0]/20">
+                <p className="text-[#FFFDD0]"><span className="font-bold uppercase tracking-wider text-xs">Before Annotations:</span><br/>&bull; Hard to locate on map<br/>&bull; What is the trail actually?</p>
+                <p className="text-[#28FFE5]"><span className="font-bold uppercase tracking-wider text-xs">After Annotations:</span><br/>&bull; Added more realistic times/distance and changed the distance scale for users to easily imagine<br/>&bull; Added &quot;star rating&quot; so users can see what they personally rated the walk<br/>&bull; Added map and trail markers to aid users</p>
+              </div>
+
+              <div className="flex flex-col gap-2 mt-4">
+                <h5 className="font-bold text-[#FFFDD0] text-lg">What Changed & Why:</h5>
+                <p className="text-gray-300 leading-relaxed">
+                  We made these changes to improve user experience. We realized that the map was there and does serve as a useful aid to the user but what aid was it actually giving to the user without any markers or trail information? That is why we added these trail markers to give the user a better visualization of the actual walk and the location of the trail.
+                </p>
+              </div>
             </div>
           </div>
         </section>

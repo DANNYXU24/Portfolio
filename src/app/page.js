@@ -45,24 +45,24 @@ export default function Home() {
       <div className="flex justify-between items-center w-full">
         {/* Logo/brand mark with hover effect */}
         <h2 className="text-xl font-semibold border-3 border-[#FFFDD0] p-3 hover:bg-[#28FFE5] hover:text-[#0D1B2A] transition-all duration-300">DX</h2>
-        
+
         {/* Navigation buttons */}
         <div className="flex gap-4">
           {/* Projects dropdown with improved hover functionality */}
-          <div 
-            className="relative" 
+          <div
+            className="relative"
             ref={dropdownRef}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           >
-            <button 
+            <button
               className="text-xl font-semibold border-3 border-[#FFFDD0] p-3 hover:bg-[#28FFE5] hover:text-[#0D1B2A] transition-all duration-300"
             >
               Projects
             </button>
             {/* Dropdown menu with improved hover behavior */}
             {showProjectsDropdown && (
-              <div 
+              <div
                 className="absolute top-full right-0 mt-1 bg-[#0D1B2A] border-3 border-[#FFFDD0] w-max min-w-[200px] z-50"
               >
                 {/* Project links in dropdown with bold text on hover */}
@@ -73,7 +73,7 @@ export default function Home() {
                   <div className="p-2 hover:bg-[#28FFE5] hover:text-[#0D1B2A] hover:font-bold transition-all duration-300 cursor-pointer">Inch Scale Design</div>
                 </Link>
                 <Link href="/projects/project3">
-                  <div className="p-2 hover:bg-[#28FFE5] hover:text-[#0D1B2A] hover:font-bold transition-all duration-300 cursor-pointer">Cogs 127</div>
+                  <div className="p-2 hover:bg-[#28FFE5] hover:text-[#0D1B2A] hover:font-bold transition-all duration-300 cursor-pointer">Dogo App</div>
                 </Link>
                 <Link href="/projects/project4">
                   <div className="p-2 hover:bg-[#28FFE5] hover:text-[#0D1B2A] hover:font-bold transition-all duration-300 cursor-pointer">Gaussian Splat Exploration</div>
@@ -104,7 +104,7 @@ export default function Home() {
           </Link>
         </div>
       </div>
-      
+
       {/* Main content section */}
       <main className="flex flex-col gap-4 items-start w-full">
         {/* User name/title */}
@@ -117,15 +117,15 @@ export default function Home() {
             <Link href="/projects/project7/" className="block w-full">
               <li className="aspect-square border-3 border-transparent hover:border-[#FFFDD0] shadow hover:shadow-lg transition-all duration-300 cursor-pointer relative overflow-hidden">
                 {/* Project image */}
-                <Image 
-                  src="/images/project7.jpg" 
-                  alt="Project 7" 
+                <Image
+                  src="/images/project7.jpg"
+                  alt="Project 7"
                   fill
                   className="object-cover"
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
                 {/* Overlay with title that appears on hover */}
-                <div 
+                <div
                   className="absolute inset-0 flex items-center justify-center transition-all duration-300"
                   style={{
                     background: 'rgba(13, 27, 42, 0)', // Transparent navy blue initially (0 opacity)
@@ -148,15 +148,15 @@ export default function Home() {
             <Link href="/projects/project6/" className="block w-full">
               <li className="aspect-square border-3 border-transparent hover:border-[#FFFDD0] shadow hover:shadow-lg transition-all duration-300 cursor-pointer relative overflow-hidden">
                 {/* Project image */}
-                <Image 
-                  src="/images/project6.jpg" 
-                  alt="Project 6" 
+                <Image
+                  src="/images/project6.jpg"
+                  alt="Project 6"
                   fill
                   className="object-cover"
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
                 {/* Overlay with title that appears on hover */}
-                <div 
+                <div
                   className="absolute inset-0 flex items-center justify-center transition-all duration-300"
                   style={{
                     background: 'rgba(13, 27, 42, 0)', // Transparent navy blue initially (0 opacity)
@@ -179,15 +179,15 @@ export default function Home() {
             <Link href="/projects/project5/" className="block w-full">
               <li className="aspect-square border-3 border-transparent hover:border-[#FFFDD0] shadow hover:shadow-lg transition-all duration-300 cursor-pointer relative overflow-hidden">
                 {/* Project image */}
-                <Image 
-                  src="/images/project5.jpg" 
-                  alt="Project 5" 
+                <Image
+                  src="/images/project5.jpg"
+                  alt="Project 5"
                   fill
                   className="object-cover"
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
                 {/* Overlay with title that appears on hover */}
-                <div 
+                <div
                   className="absolute inset-0 flex items-center justify-center transition-all duration-300"
                   style={{
                     background: 'rgba(13, 27, 42, 0)', // Transparent navy blue initially (0 opacity)
@@ -210,15 +210,15 @@ export default function Home() {
             <Link href="/projects/project4/" className="block w-full">
               <li className="aspect-square border-3 border-transparent hover:border-[#FFFDD0] shadow hover:shadow-lg transition-all duration-300 cursor-pointer relative overflow-hidden">
                 {/* Project image */}
-                <Image 
-                  src="/images/project4.jpg" 
-                  alt="Project 4" 
+                <Image
+                  src="/images/project4.jpg"
+                  alt="Project 4"
                   fill
                   className="object-cover"
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
                 {/* Overlay with title that appears on hover */}
-                <div 
+                <div
                   className="absolute inset-0 flex items-center justify-center transition-all duration-300"
                   style={{
                     background: 'rgba(13, 27, 42, 0)', // Transparent navy blue initially (0 opacity)
@@ -241,15 +241,15 @@ export default function Home() {
             <Link href="/projects/project3/" className="block w-full">
               <li className="aspect-square border-3 border-transparent hover:border-[#FFFDD0] shadow hover:shadow-lg transition-all duration-300 cursor-pointer relative overflow-hidden">
                 {/* Project image */}
-                <Image 
-                  src="/images/dogo.png" 
-                  alt="Project 3" 
+                <Image
+                  src="/images/dogo.png"
+                  alt="Project 3"
                   fill
                   className="object-cover"
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
                 {/* Overlay with title that appears on hover */}
-                <div 
+                <div
                   className="absolute inset-0 flex items-center justify-center transition-all duration-300"
                   style={{
                     background: 'rgba(13, 27, 42, 0)', // Transparent navy blue initially (0 opacity)
@@ -272,15 +272,15 @@ export default function Home() {
             <Link href="/projects/project1/" className="block w-full">
               <li className="aspect-square border-3 border-transparent hover:border-[#FFFDD0] shadow hover:shadow-lg transition-all duration-300 cursor-pointer relative overflow-hidden">
                 {/* Project image with improved fitting */}
-                <Image 
-                  src="/images/sdbike.png" 
-                  alt="SD Bike Coalition" 
+                <Image
+                  src="/images/sdbike.png"
+                  alt="SD Bike Coalition"
                   fill
                   className="object-cover"
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
                 {/* Overlay with title that appears on hover */}
-                <div 
+                <div
                   className="absolute inset-0 flex items-center justify-center transition-all duration-300"
                   style={{
                     background: 'rgba(13, 27, 42, 0)', // Transparent navy blue initially (0 opacity)
@@ -299,20 +299,20 @@ export default function Home() {
                 </div>
               </li>
             </Link>
-            
+
             {/* Project 2 card - with hover overlay and title */}
             <Link href="/projects/project2/" className="block w-full">
               <li className="aspect-square border-3 border-transparent hover:border-[#FFFDD0] shadow hover:shadow-lg transition-all duration-300 cursor-pointer relative overflow-hidden">
                 {/* Project image */}
-                <Image 
-                  src="/images/inchscale3.png" 
-                  alt="Project 2" 
+                <Image
+                  src="/images/inchscale3.png"
+                  alt="Project 2"
                   fill
                   className="object-cover"
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
                 {/* Overlay with title that appears on hover */}
-                <div 
+                <div
                   className="absolute inset-0 flex items-center justify-center transition-all duration-300"
                   style={{
                     background: 'rgba(13, 27, 42, 0)', // Transparent navy blue initially (0 opacity)
