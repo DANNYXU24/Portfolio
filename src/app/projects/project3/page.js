@@ -46,7 +46,7 @@ export default function Project3() {
 
   // Intersection Observer for scroll spy
   useEffect(() => {
-    const sectionIds = ['overview', 'research', 'testing', 'design'];
+    const sectionIds = ['overview', 'research', 'testing', 'design', 'reflection'];
     const sections = sectionIds.map(id => document.getElementById(id)).filter(Boolean);
 
     const observerOptions = {
@@ -126,6 +126,7 @@ export default function Project3() {
           <li><a href="#research" className={`transition-colors duration-300 inline-block transform ${activeSection === 'research' ? 'text-[#28FFE5] font-bold translate-x-2' : 'hover:text-[#28FFE5] hover:translate-x-1'}`}>User Research</a></li>
           <li><a href="#testing" className={`transition-colors duration-300 inline-block transform ${activeSection === 'testing' ? 'text-[#28FFE5] font-bold translate-x-2' : 'hover:text-[#28FFE5] hover:translate-x-1'}`}>Testing & Iteration</a></li>
           <li><a href="#design" className={`transition-colors duration-300 inline-block transform ${activeSection === 'design' ? 'text-[#28FFE5] font-bold translate-x-2' : 'hover:text-[#28FFE5] hover:translate-x-1'}`}>Designing the Solution</a></li>
+          <li><a href="#reflection" className={`transition-colors duration-300 inline-block transform ${activeSection === 'reflection' ? 'text-[#28FFE5] font-bold translate-x-2' : 'hover:text-[#28FFE5] hover:translate-x-1'}`}>Reflection</a></li>
         </ul>
       </aside>
 
