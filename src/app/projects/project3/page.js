@@ -275,6 +275,14 @@ export default function Project3() {
             </p>
           </div>
 
+          {/* Personal Reflection */}
+          <div className="max-w-4xl mt-6">
+            <h3 className="text-2xl font-bold text-[#28FFE5] mb-2">Personal Reflection</h3>
+            <p className="text-lg leading-relaxed text-gray-200">
+              I felt like this project was a big success. The project was able to completely redesign two user flows while at the same time keeping the &quot;Dogo Style.&quot; The main goal was to make user experience better by better catering to a Dog Owner&apos;s need and I felt like this redesign does that. If there was more time, or maybe more of a future thing to note, I would add more to the profile flow. But overall this redesigns shifts features of what users may use to what users need, making Dogo an app that better supports Dog owners.
+            </p>
+          </div>
+
           {/* Before & After Stories */}
           <div className="flex flex-col gap-8 mt-6">
             <h3 className="text-2xl font-bold text-[#FFFDD0]">Before & After Stories</h3>
